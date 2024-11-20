@@ -54,10 +54,11 @@ const SkillWrap = styled.div`
       @media screen and (max-width:870px) {
         height: 300px;
       }
-      .skillWrap{
-        /* background-color: red; */
-        max-width:800px;
-      }
+      /* .skillWrap{
+        background-color: red;
+        max-width:700px !important;
+        border-radius: 20px;
+      } */
       .skill{
         /* outline: 1px dotted red; */
         position: relative;
@@ -96,6 +97,8 @@ const SkillWrap = styled.div`
         ul{
           
           /* outline: 1px dotted red; */
+          width: 400px;
+          margin: 0 auto;
           display: flex;
           li{
             /* outline: 1px dotted red; */
@@ -159,9 +162,10 @@ const SkillWrap = styled.div`
           /* outline: 1px dotted red; */
           text-align: center;
           line-height: 30px;
-          width: 550px !important;
+          max-width: 200px !important;
           font-weight: 700;
           padding-bottom: 10px;
+          margin: 0 auto;
         }
 
         ul{
@@ -198,7 +202,7 @@ const Skill = () => {
           </div>
           <div className='skills'>
 
-            <div className='skillWrap'>
+            {/* <div className='skillWrap'> */}
 
             <div className='skill'>
               <div className='frontendImg'></div>
@@ -206,7 +210,7 @@ const Skill = () => {
               <ul>
                 <li style={{backgroundColor:'rgba(0,0,0,0.8)',color:'#fff'}}>React</li>
                 <li style={{backgroundColor:'royalblue', color:'#Fff'}}>Html</li>
-                <li style={{backgroundColor:'yellow'}}>JavaScript</li>
+                <li style={{backgroundColor:'yellow'}}>JS</li>
                 <li style={{backgroundColor:'yellowgreen'}}>css</li>
                 <li style={{backgroundColor:'lightcoral'}}>Sass</li>
               </ul>
@@ -233,7 +237,7 @@ const Skill = () => {
 
           </div>
 
-        </div>
+        {/* </div> */}
       </SkillWrap>
     </>
   )

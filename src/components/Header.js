@@ -5,15 +5,16 @@ import Headerimg from '../img/header.png'
 const HeaderAll = styled.div`
   /* outline: 1px dotted red; */
   width: 100%; height: 600px;
-  margin: 0;
+  /* margin: 0; */
   background-image: url(${Headerimg});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color:#fff;
+  box-sizing: border-box;
   .headerInner{
     margin: 0 auto;
-    max-width: 1200px !important;
+    max-width: 1200px;
     width: 100%;
     height: 100%;
     padding: 0 20px;
@@ -32,6 +33,7 @@ const HeaderAll = styled.div`
         margin-top: 50px;
         line-height: 30px;
         font-weight: 400;
+        padding: 0 15px;
       }
     }
 
@@ -110,6 +112,7 @@ const HeaderAll = styled.div`
 const RealHeader = styled.div`
    /* outline: 1px dotted red; */
    position: fixed;
+   left: 0;
    color: #000;
    z-index: 10;
    background-color: rgba(256,256,256,1);

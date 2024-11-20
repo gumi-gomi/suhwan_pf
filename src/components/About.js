@@ -6,6 +6,7 @@ const AboutWrap = styled.div`
   /* outline: 1px dotted red; */
   width: 100%;
   height: auto;
+  padding: 0 15px;
 
   @media screen and (max-width:916px) {
     height: 350px;
@@ -20,10 +21,13 @@ const AboutWrap = styled.div`
     /* outline: 1px dotted red; */
     max-width: 1200px; height: auto;
     margin: 0 auto;
+    width: 100%;
 
     .aboutTitle{
       /* outline: 1px dotted red; */
       height: 100px;
+      width: 100%;
+      
       h2{
         /* outline: 1px dotted red; */
         display: inline-block;
@@ -32,12 +36,14 @@ const AboutWrap = styled.div`
         text-align: center;
         font-size: 35px;
         font-weight: 700;
+        margin: 0 auto;
         padding-top: 40px;
         margin-left: 50%; transform: translateX(-50%);
       }
     }
     .aboutDetails{
       max-width: 1200px;
+      width: 100%;
       height: 170px;
       display: flex;
       justify-content: center;
@@ -48,7 +54,7 @@ const AboutWrap = styled.div`
 
       .detail{
         width: 220px;
-        height: 60px;
+        min-height: 60px;
         /* outline: 1px dotted red; */
         display: flex;
         

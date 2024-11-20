@@ -11,7 +11,7 @@ const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
   body, html {
-    margin: 0;
+    margin: 0px;
     padding: 0;
     width: 100%;
     overflow-x: hidden;
