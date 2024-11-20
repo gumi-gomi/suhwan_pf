@@ -4,6 +4,19 @@ import Header from './components/Header';
 import About from './components/About';
 import Skill from './components/Skill';
 import Project from './components/Project';
+import { createGlobalStyle } from 'styled-components';
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    box-sizing: border-box;
+  }
+  body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    overflow-x: hidden;
+  }
+`;
 
 function App() {
   const aboutRef = useRef(null);
@@ -24,6 +37,7 @@ function App() {
 
   return (
     <>
+     <GlobalStyle />
       <Header  
         scrollToSection={scrollToSection} 
         refs={{ aboutRef, skillRef, projectRef }} 

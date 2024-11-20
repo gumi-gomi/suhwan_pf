@@ -4,6 +4,7 @@ import Languageimg from '../img/languageimg.png'
 import Htmlimg from '../img/htmlimg.png'
 import Backendimg from '../img/backendimg.png'
 
+
 const SkillWrap = styled.div`
   width: 100%; height: 450px;
   margin: 0 auto;

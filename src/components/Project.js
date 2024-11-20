@@ -5,13 +5,14 @@ import cardgameimg from '../img/cardgameimg.webp'
 import kmongimg from '../img/kmongimg.webp'
 import dentalimg from '../img/dentalimg.webp'
 
+
 const ProjectAll = styled.div`
  width: 100%;
  height: auto;
  background-color: rgba(0,0,0,0.1);
 `
 const ProjectWrap = styled.div`
-  max-width: 1200px;
+  max-width: 1200px !important;
   height: auto;
   margin: 0 auto;
   
@@ -37,6 +38,7 @@ const ProjectWrap = styled.div`
       flex-wrap: wrap;
       padding-left: 20px;
       padding-right: 20px;
+      box-sizing: border-box;
       .project{
         border-radius: 10px;
         max-width: 550px;

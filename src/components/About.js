@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
+
 const AboutWrap = styled.div`
   /* outline: 1px dotted red; */
   width: 100%;

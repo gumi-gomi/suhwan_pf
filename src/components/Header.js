@@ -5,23 +5,27 @@ import Headerimg from '../img/header.png'
 const HeaderAll = styled.div`
   /* outline: 1px dotted red; */
   width: 100%; height: 600px;
-  margin: 0 auto;
+  margin: 0;
   background-image: url(${Headerimg});
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   color:#fff;
   .headerInner{
-    /* outline: 1px dotted red; */
     margin: 0 auto;
     max-width: 1200px !important;
+    width: 100%;
     height: 100%;
+    padding: 0 20px;
+
     .headerBtm{
       padding-top: 190px;
       text-align: center;
       h2{
         font-size: 55px;
         font-weight: 700;
+        margin: 0;
+        padding: 0 15px;
         line-height: 70px;
       }
       p{
@@ -77,7 +81,7 @@ const HeaderAll = styled.div`
   .headerInner{
     /* outline: 1px dotted red; */
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1200px !important;
     height: 100%;
     .headerBtm{
       padding-top: 190px;
