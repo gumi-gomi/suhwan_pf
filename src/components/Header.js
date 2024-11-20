@@ -14,7 +14,7 @@ const HeaderAll = styled.div`
   .headerInner{
     /* outline: 1px dotted red; */
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1200px !important;
     height: 100%;
     .headerBtm{
       padding-top: 190px;
