@@ -5,6 +5,7 @@ import About from './components/About';
 import Skill from './components/Skill';
 import Project from './components/Project';
 import { createGlobalStyle } from 'styled-components';
+import Ending from './components/Ending';
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -51,6 +52,7 @@ function App() {
         <div ref={projectRef}>
           <Project/>
         </div>
+        <Ending/>
     </>
   );
 }

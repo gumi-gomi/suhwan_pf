@@ -179,7 +179,7 @@ const Header = ({ scrollToSection, refs }) => {
        
           <div className='headerBtm'>
             <h2>- 김수환 -<br/>
-                프론트 엔드 개발자 포트폴리오
+                프론트엔드 개발자 포트폴리오
             </h2>
             <p>안녕하세요.<br/>
                프론트 엔드 개발자 김수환입니다.<br/>
