@@ -209,6 +209,14 @@ const ModalContent = styled.div`
     font-size: 30px;
     padding-bottom: 30px;
     border-bottom: 1px solid rgba(0,0,0,0.2);
+    @media screen and (max-width:700px) {
+      padding-top: 25px;
+    font-weight: 700;
+    font-size: 20px !important;
+    padding-bottom: 30px;
+    letter-spacing: -0.5px;
+    border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
   }
 
   .projectName{
@@ -230,6 +238,13 @@ const ModalContent = styled.div`
           font-size: 17px;
           font-weight: 700;
           line-height: 40px;
+          @media screen and (max-width:700px) {
+            font-size: 15px;
+            letter-spacing: -0.5px;
+            line-height: 22px;
+            text-decoration: underline;
+            text-underline-offset: 4px;
+          }
         }
         .url{
           margin-top: 20px;
@@ -245,6 +260,10 @@ const ModalContent = styled.div`
             margin-bottom: 20px;
             font-weight: 400;
             font-size: 14px;
+            @media screen and (max-width:550px) {
+            line-height: 22px;
+            margin-bottom: 0px;
+          }
           }
         }
         .link{
@@ -283,6 +302,10 @@ const ModalContent = styled.div`
         .backgroundDetail{
           margin-bottom: 40px;
           line-height: 25px;
+          @media screen and (max-width:550px) {
+            font-size: 14px;
+            line-height: 22px;
+          }
         }
         .meaning{
           margin-top: 20px;
@@ -293,6 +316,10 @@ const ModalContent = styled.div`
         .meaningDetail{
           margin-bottom: 40px;
           line-height: 25px;
+          @media screen and (max-width:550px) {
+            font-size: 14px;
+            line-height: 22px;
+          }
         }
         .usedskill{
           outline: 1px solid rgba(65,105,225,0.5);
@@ -418,7 +445,7 @@ const Project = () => {
 
               {/* ----------------------1번프로젝트 */}
               <div className='project'>
-                <div className='projectName'>GUMIGOMI-ILLUST</div>
+                <div className='projectName'>GUMIGOMI-ILLUST(일러스트 판매 사이트)</div>
                 <p className='date'>2024. 11</p>
                 <div className='imgdiv'>
                   <img src={gumigomiimg} ></img>

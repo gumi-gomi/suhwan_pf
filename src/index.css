@@ -8,5 +8,8 @@ html, body {
   margin: 0px;
   overflow-x: hidden;
   font-family: 'Pretendard-Regular';
+  word-break: keep-all;
+  white-space: normal;
+  
 }
 
