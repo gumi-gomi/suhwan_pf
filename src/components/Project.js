@@ -486,9 +486,15 @@ const Project = () => {
                     React, Scss, PS
                   </p>
                   </div>
+                  <div style={{display:'flex'}}>
+
                   <div className='popup' onClick={handleOpenModal4}>
                     <i class="fa-solid fa-book"></i>
                     <p>README</p>
+                  </div>
+                  <div className='popup' style={{marginLeft:'15px',backgroundColor:'rgba(255,150,100,0.4)'}}>
+                    <p style={{fontWeight:'700'}}>ADMIN PAGE</p>
+                  </div>
                   </div>
               </div>
 
