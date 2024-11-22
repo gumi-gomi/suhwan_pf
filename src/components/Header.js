@@ -22,7 +22,7 @@ const HeaderAll = styled.div`
     .headerBtm{
       padding-top: 190px;
       text-align: center;
-      h2{
+      .h2{
         font-size: 55px;
         font-weight: 700;
         margin: 0;
@@ -54,7 +54,7 @@ const HeaderAll = styled.div`
     .headerBtm{
       padding-top: 190px;
       text-align: center;
-      h2{
+      .h2{
         font-size: 50px;
         word-break: keep-all;
         overflow-wrap: normal;
@@ -88,7 +88,7 @@ const HeaderAll = styled.div`
     .headerBtm{
       padding-top: 190px;
       text-align: center;
-      h2{
+      .h2{
         font-size: 40px;
         word-break: keep-all;
         overflow-wrap: normal;
@@ -178,9 +178,9 @@ const Header = ({ scrollToSection, refs }) => {
         <div className='headerInner'>
        
           <div className='headerBtm'>
-            <h2>- 김수환 -<br/>
+            <p className='h2'>- 김수환 -<br/>
                 프론트엔드 개발자 포트폴리오
-            </h2>
+            </p>
             <p>안녕하세요.<br/>
                프론트 엔드 개발자 김수환입니다.<br/>
                사용자의 경험에 귀 기울이는 개발자가 되겠습니다.
