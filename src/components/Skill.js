@@ -124,7 +124,7 @@ const SkillWrap = styled.div`
           display: block;
           height: 45px;
 
-          .languageImg, .frontendImg, .backendImg{
+          .languageImg, .frontendImg, .backendImg, .certiImg{
             display: none;
         } 
 
