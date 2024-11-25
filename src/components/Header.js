@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import Headerimg from '../img/header.png'
+import Headerimg from '../img/header.webp'
 
 const HeaderAll = styled.div`
   /* outline: 1px dotted red; */

@@ -67,6 +67,7 @@ const ProjectWrap = styled.div`
            img {
               max-width: 100%;
               height: auto;    
+              scale: 1.02;
             }
         }
         .projectName{
@@ -434,8 +435,6 @@ const Project = () => {
   return (
     <>
       <ProjectAll>
-
-    
       <ProjectWrap>
       <div className='projectTitle'>
               <h2>PROJECTS</h2>
@@ -492,9 +491,11 @@ const Project = () => {
                     <i class="fa-solid fa-book"></i>
                     <p>README</p>
                   </div>
+                    <a href='https://naver.com' target='_blank' style={{textDecoration:'none',color:'#000'}}>
                   <div className='popup' style={{marginLeft:'15px',backgroundColor:'rgba(255,150,100,0.4)'}}>
                     <p style={{fontWeight:'700'}}>ADMIN PAGE</p>
                   </div>
+                    </a>
                   </div>
               </div>
 

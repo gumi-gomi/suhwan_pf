@@ -3,12 +3,14 @@ import styled from 'styled-components'
 import Languageimg from '../img/languageimg.png'
 import Htmlimg from '../img/htmlimg.png'
 import Backendimg from '../img/backendimg.png'
+import Certiimg from '../img/certiimg.webp'
 
 
 const SkillWrap = styled.div`
   width: 100%; height: 450px;
   margin: 0 auto;
   background-color: royalblue;
+
 
   @media screen and (max-width:870px) {
       height:500px;
@@ -85,6 +87,12 @@ const SkillWrap = styled.div`
           background-position: center;
           background-size: cover;
         }
+        .certiImg{
+          width: 30px; height: 30px;
+          background-image: url(${Certiimg});
+          background-position: center;
+          background-size: cover;
+        }
 
         p{
           padding-left: 20px;
@@ -103,7 +111,7 @@ const SkillWrap = styled.div`
           li{
             /* outline: 1px dotted red; */
             line-height: 30px;
-            width: 100px;
+            width: 120px;
             text-align: center;
             margin-left: 10px;
             border-radius: 10px;
@@ -114,7 +122,7 @@ const SkillWrap = styled.div`
 
         @media screen and (max-width:870px) {
           display: block;
-          height: 60px;
+          height: 45px;
 
           .languageImg, .frontendImg, .backendImg{
             display: none;
@@ -128,7 +136,7 @@ const SkillWrap = styled.div`
           line-height: 30px;
           width: 550px !important;
           font-weight: 700;
-          padding-bottom: 10px;
+          padding-bottom: 0px;
         }
 
         ul{
@@ -146,11 +154,14 @@ const SkillWrap = styled.div`
             border-radius: 5px;
             box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
           }
+          .certi{
+            width: 120px;
+          }
         }
         }
         @media screen and (max-width:550px) {
           display: block;
-          height: 60px;
+          height: 45px;
 
           .languageImg, .frontendImg, .backendImg{
             display: none;
@@ -183,6 +194,9 @@ const SkillWrap = styled.div`
             margin-left: 8px;
             border-radius: 5px;
             box-shadow: 2px 2px 5px rgba(0,0,0,0.4);
+          }
+          .certi{
+            width: 120px;
           }
         }
         }
@@ -230,6 +244,15 @@ const Skill = () => {
               <ul>
                 <li style={{backgroundColor:'lightblue'}}>PS</li>
                 <li style={{backgroundColor:'orange'}}>AI</li>
+              </ul>
+            </div>
+
+            <div className='skill'>
+              <div className='certiImg'></div>
+              <p>Certificate</p>
+              <ul>
+                <li className='certi' style={{backgroundColor:'lightblue',fontSize:'12px'}}>컴퓨터그래픽스기능사</li>
+                <li className='certi' style={{backgroundColor:'orange',fontSize:'12px'}}>웹디자인기능사</li>
               </ul>
             </div>
 

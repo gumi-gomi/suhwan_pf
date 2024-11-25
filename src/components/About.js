@@ -11,7 +11,7 @@ const AboutWrap = styled.div`
   @media screen and (max-width:916px) {
     height: 350px;
   }
-  @media screen and (max-width:576px) {
+  @media screen and (max-width:605px) {
     height: 510px;
   }
   
