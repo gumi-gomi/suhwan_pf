@@ -251,8 +251,8 @@ const Skill = () => {
               <div className='certiImg'></div>
               <p>Certificate</p>
               <ul>
-                <li className='certi' style={{backgroundColor:'lightblue',fontSize:'12px'}}>컴퓨터그래픽스기능사</li>
-                <li className='certi' style={{backgroundColor:'orange',fontSize:'12px'}}>웹디자인기능사</li>
+                <li className='certi' style={{backgroundColor:'lightblue',fontSize:'12px',fontWeight:'600'}}>컴퓨터그래픽스기능사</li>
+                <li className='certi' style={{backgroundColor:'orange',fontSize:'12px',fontWeight:'600'}}>웹디자인기능사</li>
               </ul>
             </div>
 
