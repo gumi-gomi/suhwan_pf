@@ -527,20 +527,20 @@ const Project = () => {
 
               
               <div className='project'>
-              <div className='projectName'>카드 맞추기 게임</div>
-                <p className='date'>2024. 9</p>
+              <div className='projectName'>REACT-THREE-FIBER</div>
+                <p className='date'>2024. 11</p>
                 <div className='imgdiv'>
                 <img src={cardgameimg} ></img>
                 </div>
-                <p className='detail'>빠른 시간안에 같은 색의 카드를 뒤집는 카드게임</p>
+                <p className='detail'>R3F를 활용한 사이트 구현</p>
                 <ul className='list'>
-                  <li>Local storage를 이용한 점수 저장 및 리셋기능</li>
-                  <li>photoshop, Sai tool을 이용한 그림작업</li>
+                  <li>REACT-THREE-FIBER를 활용한 3D웹 구현</li>
+                  <li>Blender를 활용한 3D모델링 작업</li>
                 </ul>
-                <a className='link' href='https://gumi-gomi.github.io/card-game/build/' target='_blank'><p>gumi-gomi.github.io/card-game</p></a>
+                <a className='link' href=' https://gumi-gomi.github.io/r3f-notebook/build/' target='_blank'><p>gumi-gomi.github.io/r3f-notebook</p></a>
                 <div className='usedskill'>
                   <p>
-                    React, Scss, PS, Sai
+                  R3F, Blender, PS, Sai
                   </p>
                   </div>
                   <div className='popup' onClick={handleOpenModal2}>
@@ -592,27 +592,31 @@ const Project = () => {
         <ModalBackground onClick={handleCloseModal2}>
           <ModalContent onClick={(e) => e.stopPropagation()}> {/* 모달 클릭 시 닫히지 않도록 */}
             <CloseButton onClick={handleCloseModal2}>&times;</CloseButton>
-            <h3>카드 맞추기 게임</h3>
+            <h3>REACT-THREE-FIBER PROJECT</h3>
             <p className='date'>2024. 11</p>
                 <p className='url'>- Homepage URL -</p>
-                <a className='link' href='https://gumi-gomi.github.io/card-game/build/' target='_blank'><p>gumi-gomi.github.io/card-game</p></a>
+                <a className='link' href=' https://gumi-gomi.github.io/r3f-notebook/build/' target='_blank'><p>gumi-gomi.github.io/r3f-notebook</p></a>
                 <p className='summary'>- Summary -</p>
-                <p className='detail'>빠른 시간안에 같은 색의 카드를 뒤집는 카드게임</p>
+                <p className='detail'>Blender와 R3F를 활용한 3D사이트 구현</p>
                 <ul className='list'>
-                <li>Local storage를 이용한 점수 저장 및 리셋기능</li>
-                <li>photoshop, Sai tool을 이용한 그림작업</li>
+                <li>REACT-THREE-FIBER를 활용한 3D웹 구현</li>
+                <li>Blender를 활용한 3D모델링 작업</li>
                 </ul>
                 <p className='background'>- Background -</p>
-                <p className='backgroundDetail'>저의 형은 인디게임개발자입니다. 형과 대화를 하다가 요즘 html로 게임을 만드는 사람이 많아진다는 말을 듣고 게임이 만들어보고 싶어졌습니다.</p>
+                <p className='backgroundDetail'>평소에 3D모델링에 관심이 있어서 Blender 설치 후 모델링 해보던 중에 웹에서 만든 3D모델을 적용해서 사이트를 구현할 수 있다는 것을 보게 되었고, 간단하게 노트북 모델을 만들어서 작업 해보았습니다.</p>
                 <p className='meaning'>- Detail - </p>
                 <p className='meaningDetail'>
-                  게임개발자인 형과 대화를 하던중 html게임에 대한 이야기를 하였습니다. 유니티로 개발을 하던 형이라 웹에서 동작이 어떻게 구현되는지 궁금해했습니다. 대단히 엄청난 게임은 아니지만 간단한 게임을 만들며 설명을 해주었고 같이 작업을 해볼 수 있을까 기대했지만 실행에 옮기지는 못했기에 아쉬웠던 기억이있습니다.<br/><br/>
-                  게임에 들어가는 이미지는 Photoshop과 Sai라는 드로잉 프로그램으로 작업하였고, keyframe을 사용해서 각 요소들에 움직임을 주었습니다. 또한 localstorage를 사용한 첫 작업이었는데, 게임이 끝나고 점수의 저장과 리셋을 할 수 있도록 하였습니다. 이 작업에서 연습한 부분은 localstorage와 컴포넌트에서 상태관리를 하기 위한 기본 훅(Hook)인 useState와 useEffect에 대한 부분인데, 게임 실행시 시작되는 타이머를 useEffect를 사용하여 화면이 랜더링될때 시작하도록 설정하였고 게임진행시 카운트되는 시간과 뒤집힌카드의 상태를 저장하기 위해 useState를 사용했습니다.전문적인 게임 개발자가 아니라서 엉성한 부분도 있지만 연습하기에 좋은 작업이었습니다.
+                  저는 평소에 3D 모델링에 관심이 있었습니다. 그래서 무료로 사용할 수 있는 Blender라는 프로그램으로 모델링을 해보던중에 3D로 만든 모델을 웹에 적용할 수 있는 REACT-THREE-FIBER라는 것을 보게되었고, 관련 정보를 찾아보면서 작업하였습니다.<br/><br/>
+                  BLENDER와 R3F는 처음 써봐서 복잡한 작업은 못하였지만, 노트북처럼 보이도록 상판과 하판을 따로 작업하여 적용하였고, 노트북 모델 뒤의 그림과 상판 위의 손모양은 아이패드와 포토샵으로 드로잉하여 적용하였습니다.<br/><br/>
+                  평소에 평면으로 된 작업만 하다가 Z축까지 사용하는 3D를 적용하는 작업을 하게되니 카메라의 위치, 3D모델의 위치, 빛의 위치 등 생각해야 할 부분들이 많았고, 처음보는 태그들도 많아서 검색해가면서 작업하였습니다.
+                  노트북이 열린 뒤에 보이는 화면은 iframe을 사용하여 제가 작업한 사이트를 로드하도록 하였습니다.<br/><br/>
+                  또한 R3F에서 물리효과를 사용할 수 있다는 설명을 보고 다음 작업은 간단한 웹게임을 만들어보면 좋겠다는 생각을 했습니다.
+                  중력, 충돌 감지, 속도 및 관성, 질량, 마찰 등 물리법칙을 사용하면 재미있는 작업물을 만들 수 있을 것 같습니다.
 
                 </p>
                 <div className='usedskill'>
                   <p>
-                    React, Scss, PS 
+                    R3F, Blender, PS 
                   </p>
                   </div>
           </ModalContent>
