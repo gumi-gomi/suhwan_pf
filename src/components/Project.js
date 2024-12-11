@@ -451,7 +451,7 @@ const Project = () => {
                 </div>
                 <p className='detail'>Firebase / Kakao Pay api를 연동한 일러스트 판매 사이트</p>
                 <ul className='list'>
-                  <li>취미로 작업한 그림을 판매하려고 사이트 개발</li>
+                  <li>사이트 운영 경험을 위한 사이트 개발</li>
                   <li>Firebase Auth, Database, Hosting 활용</li>
                   <li>Kakao Pay api를 활용한 온라인 결제서비스 구축</li>
                 </ul>
@@ -567,12 +567,12 @@ const Project = () => {
                 <p className='summary'>- Summary -</p>
                 <p className='detail'>Firebase / Kakao Pay api를 연동한 일러스트 판매 사이트</p>
                 <ul className='list'>
-                  <li>취미로 작업한 그림을 판매하려고 사이트 개발</li>
+                  <li>사이트 운영경험을 위한 사이트 개발 </li>
                   <li>Firebase Auth, Database, Hosting 활용</li>
                   <li>Kakao Pay api를 활용한 온라인 결제서비스 구축</li>
                 </ul>
                 <p className='background'>- Background -</p>
-                <p className='backgroundDetail'>저는 취미로 그림을 그리며 크몽에서 외주작업을 하고있습니다. 플랫폼의 높은 수수료와 구조에 답답함을 느꼈고, '독자적인 사이트를 구축하여 서비스해보면 어떨까'라는 생각을 하게 되었습니다. </p>
+                <p className='backgroundDetail'>회원가입, 로그인부터 상품의 판매, 도메인 연결과 호스팅까지 전부 작업하여 실제로 운영할 수 있는 사이트를 만들어보자는 목표를 가지고 작업해보았습니다.</p>
                 <p className='meaning'>- Detail - </p>
                 <p className='meaningDetail'>
                   기능이 없는 페이지 구현만 해보던 저에게 큰 의미가 있는 작업이었습니다.<br/><br/>

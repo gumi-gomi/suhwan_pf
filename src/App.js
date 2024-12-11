@@ -1,7 +1,7 @@
 import React, { useRef } from 'react';
 import './App.css';
 import Header from './components/Header';
-import About from './components/About';
+import About from './components/About.tsx';
 import Skill from './components/Skill';
 import Project from './components/Project';
 import { createGlobalStyle } from 'styled-components';
