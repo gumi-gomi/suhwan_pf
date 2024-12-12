@@ -462,7 +462,7 @@ const Project = () => {
                   </p>
                   </div>
                   <div className='popup' onClick={handleOpenModal}>
-                    <i class="fa-solid fa-book"></i>
+                    <i className="fa-solid fa-book"></i>
                     <p>README</p>
                   </div>
               </div>
@@ -488,7 +488,7 @@ const Project = () => {
                   <div style={{display:'flex'}}>
 
                   <div className='popup' onClick={handleOpenModal4}>
-                    <i class="fa-solid fa-book"></i>
+                    <i className="fa-solid fa-book"></i>
                     <p>README</p>
                   </div>
                    {/*  <a href='https://naver.com' target='_blank' style={{textDecoration:'none',color:'#000'}}>
@@ -518,7 +518,7 @@ const Project = () => {
                   </p>
                   </div>
                   <div className='popup' onClick={handleOpenModal3}>
-                    <i class="fa-solid fa-book"></i>
+                    <i className="fa-solid fa-book"></i>
                     <p>README</p>
                   </div>
               </div>
@@ -545,7 +545,7 @@ const Project = () => {
                   </p>
                   </div>
                   <div className='popup' onClick={handleOpenModal2}>
-                    <i class="fa-solid fa-book"></i>
+                    <i className="fa-solid fa-book"></i>
                     <p>README</p>
                   </div>
               </div>
