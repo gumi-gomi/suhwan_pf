@@ -675,12 +675,10 @@ const Project = () => {
                 </ul>
                {/*  <p className='background'>- Background -</p>
                 <p className='backgroundDetail'>회원들의 문의사항을 관리하려면 어떻게 하는게 좋을까 생각하다가 답글을 달 수 있는 관리자페이지를 작업해보았습니다. </p> */}
-              {/*   <p className='meaning'>- Detail - </p>
+                <p className='meaning'>- Detail - </p>
                 <p className='meaningDetail'>
-                 &nbsp;플레인한 기업형 홈페이지
-                <br/><br/>
-                 &nbsp;반응형으로 만들었고 width가 700px이하로 줄어들 때 상단의 메뉴가 누르면 오른쪽에서 나오는 메뉴 버튼으로 바뀌게 만들어 태블릿이나 스마트폰에서도 깔끔하게 확인 가능하도록 하였습니다.  
-                </p> */}
+                 &nbsp;퍼블리싱을 연습하기위한 사이트입니다. React를 사용하였고 라우터를 이용하여 페이지 전환을 하였습니다.  
+                </p>
                 <div className='usedskill'>
                   <p>
                     React, Scss, PS, Sai
