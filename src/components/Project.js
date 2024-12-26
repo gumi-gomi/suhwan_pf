@@ -4,7 +4,7 @@ import gumigomiimg from '../img/gumigomiimg.webp'
 import cardgameimg from '../img/cardgameimg.webp'
 import kmongimg from '../img/kmongimg.webp'
 import dentalimg from '../img/dentalimg.webp'
-
+import sample1 from '../img/sample2.webp'
 
 const ProjectAll = styled.div`
  width: 100%;
@@ -469,17 +469,17 @@ const Project = () => {
         
               {/* -------------------------------------- 2번 프로젝트 */}
               <div className='project'>
-              <div className='projectName'>바른이치과</div>
-                <p className='date'>2024. 7</p>
+              <div className='projectName'>기업형페이지디자인 샘플</div>
+                <p className='date'>2024. 12</p>
                 <div className='imgdiv'>
-                <img src={dentalimg} ></img>
+                <img src={sample1} ></img>
                 </div>
-                <p className='detail'>가상의 치과인 '바른이치과' 홈페이지 제작</p>
+                <p className='detail'>기업형 페이지 디자인</p>
                 <ul className='list'>
-                  <li>Firebase를 이용한 문의사항 기능추가</li>
-                  <li>Admin페이지를 만들어 회원들의 문의사항 관리가능 </li>
+                  <li>기업형페이지 샘플 작업</li>
+                  {/* <li>Admin페이지를 만들어 회원들의 문의사항 관리가능 </li> */}
                 </ul>
-                <a className='link' href='https://gumi-gomi.github.io/dental_proj/build/' target='_blank'><p>gumi-gomi.github.io/dental_proj</p></a>
+                <a className='link' href='https://gumi-gomi.github.io/pub_sample2/build/' target='_blank'><p>gumi-gomi.github.io/pub2_proj</p></a>
                 <div className='usedskill'>
                   <p>
                     React, Scss, PS
@@ -662,25 +662,25 @@ const Project = () => {
         <ModalBackground onClick={handleCloseModal4}>
           <ModalContent onClick={(e) => e.stopPropagation()}> {/* 모달 클릭 시 닫히지 않도록 */}
             <CloseButton onClick={handleCloseModal4}>&times;</CloseButton>
-            <h3>바른이치과 홈페이지</h3>
-            <p className='date'>2024. 11</p>
+            <h3>기업형 홈페이지 디자인 샘플</h3>
+            <p className='date'>2024. 12</p>
                 <p className='url'>- Homepage URL -</p>
                 <a className='link' href='https://gumi-gomi.github.io/dental_proj/build/' target='_blank'><p>gumi-gomi.github.io/dental-proj</p></a>
                 <p className='summary'>- Summary -</p>
-                <p className='detail'>가상의 치과인 '바른이치과' 홈페이지 제작</p>
+                <p className='detail'>기업형 홈페이지 샘플 제작</p>
                 <ul className='list'>
-                <li>Firebase를 이용한 문의사항 기능추가</li>
-                  <li>Admin페이지를 만들어 회원들의 문의사항 관리가능 </li>
+                <li>라우터를 사용한 페이지 전환</li>
+                <li>홈페이지 퍼블리싱 작업</li>
+                  {/* <li>Admin페이지를 만들어 회원들의 문의사항 관리가능 </li> */}
                 </ul>
                {/*  <p className='background'>- Background -</p>
                 <p className='backgroundDetail'>회원들의 문의사항을 관리하려면 어떻게 하는게 좋을까 생각하다가 답글을 달 수 있는 관리자페이지를 작업해보았습니다. </p> */}
-                <p className='meaning'>- Detail - </p>
+              {/*   <p className='meaning'>- Detail - </p>
                 <p className='meaningDetail'>
-                  {/* <br/><br/> */}
-                 &nbsp;기본적인 답글기능을 구현해보기 위해 가상의 치과홈페이지를 만들었습니다. Firebase의 로그인 기능을 넣고 회원마다 마이페이지에서 문의사항을 남길 수 있도록 하였습니다. 또한 관리자페이지는 Admin계정으로 접속 할 수 있게 하였고, 관리자페이지에서 회원의 문의사항을 보고 답글을 달 수 있도록 하였습니다.
+                 &nbsp;플레인한 기업형 홈페이지
                 <br/><br/>
                  &nbsp;반응형으로 만들었고 width가 700px이하로 줄어들 때 상단의 메뉴가 누르면 오른쪽에서 나오는 메뉴 버튼으로 바뀌게 만들어 태블릿이나 스마트폰에서도 깔끔하게 확인 가능하도록 하였습니다.  
-                </p>
+                </p> */}
                 <div className='usedskill'>
                   <p>
                     React, Scss, PS, Sai
