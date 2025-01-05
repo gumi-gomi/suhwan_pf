@@ -5,6 +5,7 @@ import cardgameimg from '../img/cardgameimg.webp'
 import kmongimg from '../img/kmongimg.webp'
 import dentalimg from '../img/dentalimg.webp'
 import sample1 from '../img/sample2.webp'
+import sample3 from '../img/sample3.webp'
 
 const ProjectAll = styled.div`
  width: 100%;
@@ -499,6 +500,41 @@ const Project = () => {
                   </div>
               </div>
 
+              {/* ------------------------------------ 요식업사이트 시작*/}
+              <div className='project'>
+              <div className='projectName'>요식업디자인 샘플</div>
+                <p className='date'>2024. 12</p>
+                <div className='imgdiv'>
+                <img src={sample3} ></img>
+                </div>
+                <p className='detail'>요식업기업 페이지 디자인</p>
+                <ul className='list'>
+                  <li>기업형페이지 샘플 작업</li>
+                  {/* <li>Admin페이지를 만들어 회원들의 문의사항 관리가능 </li> */}
+                </ul>
+                <a className='link' href='https://gumi-gomi.github.io/pub3/build' target='_blank'><p>gumi-gomi.github.io/pub2_proj</p></a>
+                <div className='usedskill'>
+                  <p>
+                    React, Scss, PS
+                  </p>
+                  </div>
+                  <div style={{display:'flex'}}>
+
+                  <div className='popup' onClick={handleOpenModal4}>
+                    <i className="fa-solid fa-book"></i>
+                    <p>README</p>
+                  </div>
+                   {/*  <a href='https://naver.com' target='_blank' style={{textDecoration:'none',color:'#000'}}>
+                  <div className='popup' style={{marginLeft:'15px',backgroundColor:'rgba(255,150,100,0.4)'}}>
+                    <p style={{fontWeight:'700'}}>ADMIN PAGE</p>
+                  </div>
+                    </a> */}
+                  </div>
+              </div>
+
+
+              {/* ------------------------------------ 요식업사이트 끝*/}
+
               {/* ---------------------------------------3번 프로젝트 */}
               <div className='project'>
               <div className='projectName'>크몽 외주작업 포트폴리오</div>
@@ -678,6 +714,7 @@ const Project = () => {
                 <p className='meaning'>- Detail - </p>
                 <p className='meaningDetail'>
                  &nbsp;퍼블리싱을 연습하기위한 사이트입니다. React를 사용하였고 라우터를 이용하여 페이지 전환을 하였습니다.  
+                 {/* <br/><br/> */}
                 </p>
                 <div className='usedskill'>
                   <p>
