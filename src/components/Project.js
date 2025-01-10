@@ -478,7 +478,7 @@ const Project = () => {
                 <p className='detail'>기업형 페이지 디자인</p>
                 <ul className='list'>
                   <li>기업형페이지 샘플 작업</li>
-                  {/* <li>Admin페이지를 만들어 회원들의 문의사항 관리가능 </li> */}
+                  <li>반응형페이지</li>
                 </ul>
                 <a className='link' href='https://gumi-gomi.github.io/pub_sample2/build/' target='_blank'><p>gumi-gomi.github.io/pub2_proj</p></a>
                 <div className='usedskill'>
@@ -510,9 +510,9 @@ const Project = () => {
                 <p className='detail'>요식업기업 페이지 디자인</p>
                 <ul className='list'>
                   <li>기업형페이지 샘플 작업</li>
-                  {/* <li>Admin페이지를 만들어 회원들의 문의사항 관리가능 </li> */}
+                  <li>반응형페이지</li>
                 </ul>
-                <a className='link' href='https://gumi-gomi.github.io/pub3/build' target='_blank'><p>gumi-gomi.github.io/pub2_proj</p></a>
+                <a className='link' href='https://gumi-gomi.github.io/pub3/build' target='_blank'><p>gumi-gomi.github.io/pub3_proj</p></a>
                 <div className='usedskill'>
                   <p>
                     React, Scss, PS
@@ -536,7 +536,7 @@ const Project = () => {
               {/* ------------------------------------ 요식업사이트 끝*/}
 
               {/* ---------------------------------------3번 프로젝트 */}
-              <div className='project'>
+             {/*  <div className='project'>
               <div className='projectName'>크몽 외주작업 포트폴리오</div>
                 <p className='date'>2024. 9</p>
                 <div className='imgdiv'>
@@ -557,7 +557,7 @@ const Project = () => {
                     <i className="fa-solid fa-book"></i>
                     <p>README</p>
                   </div>
-              </div>
+              </div> */}
 
               {/* --------------------------------------- 4번 프로젝트 */}
 
@@ -664,9 +664,10 @@ const Project = () => {
 
       {/* ----------------------------------------- 크몽 외주작업 포폴 */}
 
+{/* 
       {isModalOpen3 && (
         <ModalBackground onClick={handleCloseModal3}>
-          <ModalContent onClick={(e) => e.stopPropagation()}> {/* 모달 클릭 시 닫히지 않도록 */}
+          <ModalContent onClick={(e) => e.stopPropagation()}> 
             <CloseButton onClick={handleCloseModal3}>&times;</CloseButton>
             <h3>크몽 외주작업 포트폴리오</h3>
             <p className='date'>2024. 11</p>
@@ -693,6 +694,8 @@ const Project = () => {
           </ModalContent>
         </ModalBackground>
       )}
+      */}
+      
       {/* --------------------------------------------- 4번쨰 모달 */}
       {isModalOpen4 && (
         <ModalBackground onClick={handleCloseModal4}>
@@ -707,13 +710,13 @@ const Project = () => {
                 <ul className='list'>
                 <li>라우터를 사용한 페이지 전환</li>
                 <li>홈페이지 퍼블리싱 작업</li>
-                  {/* <li>Admin페이지를 만들어 회원들의 문의사항 관리가능 </li> */}
+                  <li>반응형페이지로 작업</li>
                 </ul>
                {/*  <p className='background'>- Background -</p>
                 <p className='backgroundDetail'>회원들의 문의사항을 관리하려면 어떻게 하는게 좋을까 생각하다가 답글을 달 수 있는 관리자페이지를 작업해보았습니다. </p> */}
                 <p className='meaning'>- Detail - </p>
                 <p className='meaningDetail'>
-                 &nbsp;퍼블리싱을 연습하기위한 사이트입니다. React를 사용하였고 라우터를 이용하여 페이지 전환을 하였습니다.  
+                 &nbsp;퍼블리싱을 연습하기위한 사이트입니다. React로 작업하였고 react-route를 사용하여 페이지를 전환하였습니다.<br/>또한 반응형으로 제작하여 화면크기에 맞게 화면이 구성되도록 하였습니다.
                  {/* <br/><br/> */}
                 </p>
                 <div className='usedskill'>
