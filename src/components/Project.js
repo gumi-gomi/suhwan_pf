@@ -577,7 +577,7 @@ const Project = () => {
                 </div>
                 <p className='detail'>요식업기업 페이지 디자인</p>
                 <ul className='list'>
-                  <li>기업형페이지 샘플 작업</li>
+                  <li>요식업페이지지 샘플 작업</li>
                   <li>반응형페이지</li>
                 </ul>
                 <a className='link' href='https://gumi-gomi.github.io/pub3/build' target='_blank'><p>gumi-gomi.github.io/pub3_proj</p></a>
@@ -842,7 +842,7 @@ const Project = () => {
                 <p className='url'>- Homepage URL -</p>
                 <a className='link' href='https://gumi-gomi.github.io/pub3/build/' target='_blank'><p>gumi-gomi.github.io/pub3-proj</p></a>
                 <p className='summary'>- Summary -</p>
-                <p className='detail'>기업형 홈페이지 샘플 제작</p>
+                <p className='detail'>요식업업페이지 샘플 제작</p>
                 <ul className='list'>
                 <li>라우터를 사용한 페이지 전환</li>
                 <li>홈페이지 퍼블리싱 작업</li>
