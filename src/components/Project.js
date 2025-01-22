@@ -6,6 +6,8 @@ import kmongimg from '../img/kmongimg.webp'
 import dentalimg from '../img/dentalimg.webp'
 import sample1 from '../img/sample2.webp'
 import sample3 from '../img/sample3.webp'
+import sample5 from '../img/sample5.webp'
+import sample7 from '../img/sample7.webp'
 
 const ProjectAll = styled.div`
  width: 100%;
@@ -351,6 +353,9 @@ const Project = () => {
   const [isModalOpen2, setIsModalOpen2] = useState(false);
   const [isModalOpen3, setIsModalOpen3] = useState(false);
   const [isModalOpen4, setIsModalOpen4] = useState(false);
+  const [isModalOpen5, setIsModalOpen5] = useState(false);
+  const [isModalOpen6, setIsModalOpen6] = useState(false);
+  const [isModalOpen7, setIsModalOpen7] = useState(false);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -364,6 +369,16 @@ const Project = () => {
   const handleOpenModal4 = () => {
     setIsModalOpen4(true);
   };
+  const handleOpenModal5 = () => {
+    setIsModalOpen5(true);
+  };
+  const handleOpenModal6 = () => {
+    setIsModalOpen6(true);
+  };
+  const handleOpenModal7 = () => {
+    setIsModalOpen7(true);
+  };
+
 
   const handleCloseModal = () => {
     setIsModalOpen(false);
@@ -376,6 +391,15 @@ const Project = () => {
   };
   const handleCloseModal4 = () => {
     setIsModalOpen4(false);
+  };
+  const handleCloseModal5 = () => {
+    setIsModalOpen5(false);
+  };
+  const handleCloseModal6 = () => {
+    setIsModalOpen6(false);
+  };
+  const handleCloseModal7 = () => {
+    setIsModalOpen7(false);
   };
 
 
@@ -420,6 +444,18 @@ const Project = () => {
 
   useEffect(() => {
     if (isModalOpen4) {
+      document.body.style.overflow = 'hidden'; // 모달이 열리면 배경 스크롤 잠금
+    } else {
+      document.body.style.overflow = 'auto'; // 모달이 닫히면 배경 스크롤 해제
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto'; // 컴포넌트 언마운트 시에도 스크롤 해제
+    };
+  }, [isModalOpen4]);
+
+  useEffect(() => {
+    if (isModalOpen6) {
       document.body.style.overflow = 'hidden'; // 모달이 열리면 배경 스크롤 잠금
     } else {
       document.body.style.overflow = 'auto'; // 모달이 닫히면 배경 스크롤 해제
@@ -500,6 +536,38 @@ const Project = () => {
                   </div>
               </div>
 
+              {/* --------------------------------- brander */}
+              <div className='project'>
+              <div className='projectName'>기업형페이지디자인 샘플2</div>
+                <p className='date'>2024. 12</p>
+                <div className='imgdiv'>
+                <img src={sample5} ></img>
+                </div>
+                <p className='detail'>기업형 페이지 디자인2</p>
+                <ul className='list'>
+                  <li>기업형페이지 샘플 작업</li>
+                </ul>
+                <a className='link' href='https://gumi-gomi.github.io/pub4/build' target='_blank'><p>gumi-gomi.github.io/pub4_proj</p></a>
+                <div className='usedskill'>
+                  <p>
+                    React, Scss, PS
+                  </p>
+                  </div>
+                  <div style={{display:'flex'}}>
+
+                  <div className='popup' onClick={handleOpenModal5}>
+                    <i className="fa-solid fa-book"></i>
+                    <p>README</p>
+                  </div>
+                   {/*  <a href='https://naver.com' target='_blank' style={{textDecoration:'none',color:'#000'}}>
+                  <div className='popup' style={{marginLeft:'15px',backgroundColor:'rgba(255,150,100,0.4)'}}>
+                    <p style={{fontWeight:'700'}}>ADMIN PAGE</p>
+                  </div>
+                    </a> */}
+                  </div>
+              </div>
+              {/* --------------------------------- brander 끝 */}
+
               {/* ------------------------------------ 요식업사이트 시작*/}
               <div className='project'>
               <div className='projectName'>요식업디자인 샘플</div>
@@ -520,7 +588,7 @@ const Project = () => {
                   </div>
                   <div style={{display:'flex'}}>
 
-                  <div className='popup' onClick={handleOpenModal4}>
+                  <div className='popup' onClick={handleOpenModal6}>
                     <i className="fa-solid fa-book"></i>
                     <p>README</p>
                   </div>
@@ -534,6 +602,41 @@ const Project = () => {
 
 
               {/* ------------------------------------ 요식업사이트 끝*/}
+
+              {/* ------------------------ 랜딩페이지 시작 */}
+              <div className='project'>
+              <div className='projectName'>랜딩페이지지 샘플</div>
+                <p className='date'>2024. 12</p>
+                <div className='imgdiv'>
+                <img src={sample7} ></img>
+                </div>
+                <p className='detail'>랜딩페이지 디자인</p>
+                <ul className='list'>
+                  <li>랜딩페이지 샘플 작업</li>
+                  <li>반응형페이지</li>
+                </ul>
+                <a className='link' href='https://gumi-gomi.github.io/pub1/build/' target='_blank'><p>gumi-gomi.github.io/design_proj</p></a>
+                <div className='usedskill'>
+                  <p>
+                    React, Scss, PS
+                  </p>
+                  </div>
+                  <div style={{display:'flex'}}>
+
+                  <div className='popup' onClick={handleOpenModal7}>
+                    <i className="fa-solid fa-book"></i>
+                    <p>README</p>
+                  </div>
+                   {/*  <a href='https://naver.com' target='_blank' style={{textDecoration:'none',color:'#000'}}>
+                  <div className='popup' style={{marginLeft:'15px',backgroundColor:'rgba(255,150,100,0.4)'}}>
+                    <p style={{fontWeight:'700'}}>ADMIN PAGE</p>
+                  </div>
+                    </a> */}
+                  </div>
+              </div>
+
+              {/* ------------------------ 랜딩페이지 끝 */}
+      
 
               {/* ---------------------------------------3번 프로젝트 */}
              {/*  <div className='project'>
@@ -704,7 +807,7 @@ const Project = () => {
             <h3>기업형 홈페이지 디자인 샘플</h3>
             <p className='date'>2024. 12</p>
                 <p className='url'>- Homepage URL -</p>
-                <a className='link' href='https://gumi-gomi.github.io/dental_proj/build/' target='_blank'><p>gumi-gomi.github.io/dental-proj</p></a>
+                <a className='link' href='https://gumi-gomi.github.io/pub_sample2/build/' target='_blank'><p>gumi-gomi.github.io/pub2-proj</p></a>
                 <p className='summary'>- Summary -</p>
                 <p className='detail'>기업형 홈페이지 샘플 제작</p>
                 <ul className='list'>
@@ -727,6 +830,110 @@ const Project = () => {
           </ModalContent>
         </ModalBackground>
       )}
+
+
+      {/* ---------------------- 요식업 모달 시작 */}
+      {isModalOpen6 && (
+        <ModalBackground onClick={handleCloseModal6}>
+          <ModalContent onClick={(e) => e.stopPropagation()}> {/* 모달 클릭 시 닫히지 않도록 */}
+            <CloseButton onClick={handleCloseModal6}>&times;</CloseButton>
+            <h3>요식업 페이지 디자인 샘플</h3>
+            <p className='date'>2025. 1</p>
+                <p className='url'>- Homepage URL -</p>
+                <a className='link' href='https://gumi-gomi.github.io/pub3/build/' target='_blank'><p>gumi-gomi.github.io/pub3-proj</p></a>
+                <p className='summary'>- Summary -</p>
+                <p className='detail'>기업형 홈페이지 샘플 제작</p>
+                <ul className='list'>
+                <li>라우터를 사용한 페이지 전환</li>
+                <li>홈페이지 퍼블리싱 작업</li>
+                  <li>반응형페이지로 작업</li>
+                </ul>
+               {/*  <p className='background'>- Background -</p>
+                <p className='backgroundDetail'>회원들의 문의사항을 관리하려면 어떻게 하는게 좋을까 생각하다가 답글을 달 수 있는 관리자페이지를 작업해보았습니다. </p> */}
+                <p className='meaning'>- Detail - </p>
+                <p className='meaningDetail'>
+                 &nbsp;퍼블리싱을 연습하기위한 사이트입니다. React로 작업하였고 react-route를 사용하여 페이지를 전환하였습니다.<br/>또한 반응형으로 제작하여 화면크기에 맞게 화면이 구성되도록 하였습니다.
+                 {/* <br/><br/> */}
+                </p>
+                <div className='usedskill'>
+                  <p>
+                    React, Scss, PS, Sai
+                  </p>
+                  </div>
+          </ModalContent>
+        </ModalBackground>
+      )}
+      {/* ---------------------- 요식업 모달 끝 */}
+      {/* ------------------------------------------- brander modal */}
+      {isModalOpen5 && (
+        <ModalBackground onClick={handleCloseModal5}>
+          <ModalContent onClick={(e) => e.stopPropagation()}> {/* 모달 클릭 시 닫히지 않도록 */}
+            <CloseButton onClick={handleCloseModal5}>&times;</CloseButton>
+            <h3>기업형 홈페이지 디자인 샘플2</h3>
+            <p className='date'>2024. 12</p>
+                <p className='url'>- Homepage URL -</p>
+                <a className='link' href='https://gumi-gomi.github.io/pub4/build/' target='_blank'><p>gumi-gomi.github.io/pub4-proj</p></a>
+                <p className='summary'>- Summary -</p>
+                <p className='detail'>기업형 홈페이지 샘플 제작</p>
+                <ul className='list'>
+                <li>라우터를 사용한 페이지 전환</li>
+                <li>홈페이지 퍼블리싱 작업</li>
+                  <li>AI를 이용한 움직이는 배경화면 생성</li>
+                </ul>
+               {/*  <p className='background'>- Background -</p>
+                <p className='backgroundDetail'>회원들의 문의사항을 관리하려면 어떻게 하는게 좋을까 생각하다가 답글을 달 수 있는 관리자페이지를 작업해보았습니다. </p> */}
+                <p className='meaning'>- Detail - </p>
+                <p className='meaningDetail'>
+                 &nbsp;퍼블리싱을 연습하기위한 사이트입니다. React로 작업하였고 react-route를 사용하여 페이지를 전환하였습니다.<br/>AI를 이용해 움직이는 배경화면을 생성해 메인페이지에 적용하였고 KEYFRAME을 이용하여 요소의 움직임을 구현하였습니다.
+                 {/* <br/><br/> */}
+                </p>
+                <div className='usedskill'>
+                  <p>
+                    React, Scss, PS, Sai
+                  </p>
+                  </div>
+          </ModalContent>
+        </ModalBackground>
+      )}
+
+      {/* ------------------------------------------- brander modal 끝 */}
+
+      {/* ---------------------------- 랜딩페이지 시작 */}
+
+      {isModalOpen7 && (
+        <ModalBackground onClick={handleCloseModal7}>
+          <ModalContent onClick={(e) => e.stopPropagation()}> {/* 모달 클릭 시 닫히지 않도록 */}
+            <CloseButton onClick={handleCloseModal7}>&times;</CloseButton>
+            <h3>랜딩페이지 디자인 샘플</h3>
+            <p className='date'>2024. 12</p>
+                <p className='url'>- Homepage URL -</p>
+                <a className='link' href='https://gumi-gomi.github.io/pub1/build/' target='_blank'><p>gumi-gomi.github.io/design-proj</p></a>
+                <p className='summary'>- Summary -</p>
+                <p className='detail'>간단한 랜딩페이지 샘플 제작</p>
+                <ul className='list'>
+                {/* <li>라우터를 사용한 페이지 전환</li> */}
+                <li>홈페이지 퍼블리싱 작업</li>
+                  <li>Photoshop을 이용한 이미지 편집과 일러스트생성, 이미지 삽입</li>
+                </ul>
+               {/*  <p className='background'>- Background -</p>
+                <p className='backgroundDetail'>회원들의 문의사항을 관리하려면 어떻게 하는게 좋을까 생각하다가 답글을 달 수 있는 관리자페이지를 작업해보았습니다. </p> */}
+                <p className='meaning'>- Detail - </p>
+                <p className='meaningDetail'>
+                 &nbsp;원페이지로 작업한 소개페이지입니다.<br/>
+                  취미로 작업했던 일러스트와 구글에서 캡쳐한 이미지로 일러스트레이터 소개페이지를 간략하게 만들었습니다. Keyframe을 이용해서 이미지의 움직임을 구현했고 반응형으로 제작하였습니다.
+                 {/* <br/><br/> */}
+                </p>
+                <div className='usedskill'>
+                  <p>
+                    React, Scss, PS, Sai
+                  </p>
+                  </div>
+          </ModalContent>
+        </ModalBackground>
+      )}
+
+
+      {/* ---------------------------- 랜딩페이지 끝 */}
 
 
     </>
