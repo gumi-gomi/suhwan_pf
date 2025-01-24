@@ -482,7 +482,7 @@ const Project = () => {
               {/* ----------------------1번프로젝트 */}
               <div className='project'>
                 <div className='projectName'>GUMIGOMI-ILLUST(일러스트 판매 사이트)</div>
-                <p className='date'>2024. 11</p>
+                <p className='date'>2024. 12</p>
                 <div className='imgdiv'>
                   <img src={gumigomiimg} ></img>
                 </div>
@@ -667,7 +667,7 @@ const Project = () => {
               
               <div className='project'>
               <div className='projectName'>REACT-THREE-FIBER</div>
-                <p className='date'>2024. 11</p>
+                <p className='date'>2025. 1</p>
                 <div className='imgdiv'>
                 <img src={cardgameimg} ></img>
                 </div>
