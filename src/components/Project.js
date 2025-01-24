@@ -482,7 +482,7 @@ const Project = () => {
               {/* ----------------------1번프로젝트 */}
               <div className='project'>
                 <div className='projectName'>GUMIGOMI-ILLUST(일러스트 판매 사이트)</div>
-                <p className='date'>2024. 12</p>
+                <p className='date'>2024. 11</p>
                 <div className='imgdiv'>
                   <img src={gumigomiimg} ></img>
                 </div>
@@ -571,7 +571,7 @@ const Project = () => {
               {/* ------------------------------------ 요식업사이트 시작*/}
               <div className='project'>
               <div className='projectName'>요식업디자인 샘플</div>
-                <p className='date'>2024. 12</p>
+                <p className='date'>2025. 1</p>
                 <div className='imgdiv'>
                 <img src={sample3} ></img>
                 </div>
@@ -667,7 +667,7 @@ const Project = () => {
               
               <div className='project'>
               <div className='projectName'>REACT-THREE-FIBER</div>
-                <p className='date'>2025. 1</p>
+                <p className='date'>2024. 12</p>
                 <div className='imgdiv'>
                 <img src={cardgameimg} ></img>
                 </div>
@@ -675,7 +675,7 @@ const Project = () => {
                 <ul className='list'>
                   <li>REACT-THREE-FIBER를 활용한 3D웹 구현</li>
                   <li>Blender를 활용한 3D모델링 작업</li>
-                  <li style={{color:'red'}}>&#8251; 윈도우와 안드로이드로 확인요망.(ios오류수정중)</li>
+                  <li style={{color:'red'}}>&#8251; 윈도우와 안드로이드로 확인요망.</li>
                 </ul>
                 <a className='link' href=' https://gumi-gomi.github.io/r3f-notebook/build/' target='_blank'><p>gumi-gomi.github.io/r3f-notebook</p></a>
                 <div className='usedskill'>
@@ -734,7 +734,7 @@ const Project = () => {
           <ModalContent onClick={(e) => e.stopPropagation()}> {/* 모달 클릭 시 닫히지 않도록 */}
             <CloseButton onClick={handleCloseModal2}>&times;</CloseButton>
             <h3>REACT-THREE-FIBER PROJECT</h3>
-            <p className='date'>2024. 11</p>
+            <p className='date'>2024. 12</p>
                 <p className='url'>- Homepage URL -</p>
                 <a className='link' href=' https://gumi-gomi.github.io/r3f-notebook/build/' target='_blank'><p>gumi-gomi.github.io/r3f-notebook</p></a>
                 <p className='summary'>- Summary -</p>
@@ -753,7 +753,7 @@ const Project = () => {
                   노트북이 열린 뒤에 보이는 화면은 iframe을 사용하여 제가 작업한 사이트를 로드하도록 하였습니다.<br/><br/>
                   &nbsp;또한 R3F에서 물리효과를 사용할 수 있다는 설명을 보고 다음 작업은 간단한 웹게임을 만들어보면 좋겠다는 생각을 했습니다.
                   중력, 충돌 감지, 속도 및 관성, 질량, 마찰 등 물리법칙을 사용하면 재미있는 작업물을 만들 수 있을 것 같습니다.<br/><br/>
-                  <span style={{color:"red"}}>(현재 아이패드와 아이폰에서 노트북 화면을 구성하는 iframe의 위치가 달라지는 오류를 발견하여 수정중이기에 윈도우나 안드로이드로 확인바랍니다.)</span>
+                  {/* <span style={{color:"red"}}>(현재 아이패드와 아이폰에서 노트북 화면을 구성하는 iframe의 위치가 달라지는 오류를 발견하여 수정중이기에 윈도우나 안드로이드로 확인바랍니다.)</span> */}
 
                 </p>
                 <div className='usedskill'>
