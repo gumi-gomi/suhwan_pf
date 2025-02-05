@@ -226,7 +226,7 @@ const Skill = () => {
                 <li style={{backgroundColor:'royalblue', color:'#Fff'}}>Html</li>
                 <li style={{backgroundColor:'yellow'}}>JS</li>
                 <li style={{backgroundColor:'yellowgreen'}}>css</li>
-                <li style={{backgroundColor:'lightcoral'}}>Sass</li>
+                <li style={{backgroundColor:'lightcoral'}}>SCSS</li>
               </ul>
             </div>
 
