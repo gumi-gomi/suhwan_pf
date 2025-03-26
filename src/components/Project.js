@@ -491,7 +491,7 @@ const Project = () => {
                   <li>사이트 운영 경험을 목표로 개발</li>
                   <li>Firebase Auth, Database, Hosting 활용</li>
                   <li>Kakao Pay api를 활용한 온라인 결제서비스 구축</li>
-                  <li style={{color:'red', fontWeight:'700'}}>리액트 네이티브(어플)와 연동을 위해 현재 결제로직 수정중</li>
+                  {/* <li style={{color:'red', fontWeight:'700'}}>리액트 네이티브(어플)와 연동을 위해 현재 결제로직 수정중</li> */}
                 </ul>
                 <a className='link' href='https://gumigomi-illust.com' target='_blank'><p>https://gumigomi-illust.com</p></a>
                 <div className='usedskill'>
