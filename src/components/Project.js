@@ -84,7 +84,7 @@ const ProjectWrap = styled.div`
         }
         .date{
           font-size: 14px;
-          color: rgba(0,0,0,0.6);
+          color: #fff;
           line-height: 35px;
           /* border-bottom: 1px solid rgba(0,0,0,0.2); */
         }
@@ -234,7 +234,7 @@ const ModalContent = styled.div`
         }
         .date{
           font-size: 14px;
-          color: rgba(0,0,0,0.6);
+          color: #fff;
           line-height: 35px;
           /* border-bottom: 1px solid rgba(0,0,0,0.2); */
         }
@@ -481,7 +481,10 @@ const Project = () => {
 
               {/* ----------------------1번프로젝트 */}
               <div className='project'>
-                <div className='projectName'>GUMIGOMI-ILLUST(일러스트 판매 사이트)</div>
+                <div className='projectName'>GG-ILLUST(일러스트 판매 사이트)</div>
+                <a href='https://drive.google.com/uc?export=download&id=1Exxve-Vd0x5TRHJTHTIN5dtHZB-hJtCh' target='_blank'>
+                <div className='projectName' style={{marginLeft:'10px', backgroundColor:'lightcoral',color:'#fff',boxShadow:'0px 0px 10px rgba(0,0,0,0.4)',cursor:'pointer'}}>안드로이드 어플 다운</div>
+                </a>
                 <p className='date'>2024. 11</p>
                 <div className='imgdiv'>
                   <img src={gumigomiimg} ></img>
@@ -491,6 +494,7 @@ const Project = () => {
                   <li>사이트 운영 경험을 목표로 개발</li>
                   <li>Firebase Auth, Database, Hosting 활용</li>
                   <li>Kakao Pay api를 활용한 온라인 결제서비스 구축</li>
+                  <li>React-native를 이용한 어플 연동</li>
                   {/* <li style={{color:'red', fontWeight:'700'}}>리액트 네이티브(어플)와 연동을 위해 현재 결제로직 수정중</li> */}
                 </ul>
                 <a className='link' href='https://gumigomi-illust.com' target='_blank'><p>https://gumigomi-illust.com</p></a>
