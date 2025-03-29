@@ -483,7 +483,7 @@ const Project = () => {
               <div className='project'>
                 <div className='projectName'>GG-ILLUST(일러스트 판매 사이트)</div>
                 <a href='https://drive.google.com/uc?export=download&id=1Exxve-Vd0x5TRHJTHTIN5dtHZB-hJtCh' target='_blank'>
-                <div className='projectName' style={{marginLeft:'10px', backgroundColor:'lightcoral',color:'#fff',boxShadow:'0px 0px 10px rgba(0,0,0,0.4)',cursor:'pointer'}}>안드로이드 어플 다운</div>
+                <div className='projectName' style={{marginLeft:'10px', backgroundColor:'lightcoral',color:'#fff',boxShadow:'0px 0px 10px rgba(0,0,0,0.4)',cursor:'pointer'}}>Android 어플 다운</div>
                 </a>
                 <p className='date'>2024. 11</p>
                 <div className='imgdiv'>
