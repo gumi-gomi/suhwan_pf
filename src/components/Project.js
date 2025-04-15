@@ -76,7 +76,7 @@ const ProjectWrap = styled.div`
         .projectName{
           /* outline: 1px dotted red; */
           display: inline-block;
-          padding: 8px 15px;
+          padding: 8px 10px;
           border-radius: 5px;
           font-size: 14px;
           background-color: royalblue;
@@ -231,6 +231,17 @@ const ModalContent = styled.div`
           font-size: 14px;
           background-color: royalblue;
           color: #fff;
+          
+        }
+        .projectAnd{
+          /* outline: 1px dotted red; */
+          display: inline-block;
+          padding: 8px 15px;
+          border-radius: 5px;
+          font-size: 14px;
+          background-color: royalblue;
+          color: #fff;
+          
         }
         .date{
           font-size: 14px;
@@ -344,6 +355,7 @@ const CloseButton = styled.button`
   font-size: 20px;
   cursor: pointer;
 `;
+
 
 // ------------------ 모달팝업 끝 -------------
 
@@ -481,9 +493,9 @@ const Project = () => {
 
               {/* ----------------------1번프로젝트 */}
               <div className='project'>
-                <div className='projectName'>GG-ILLUST(일러스트 판매 사이트)</div>
+                <div className='projectName'style={{marginRight:'5px'}}>GG-ILLUST(일러스트판매)</div>
                 <a href='https://drive.google.com/uc?export=download&id=1coFOwb4NtsLsKA4SP08AqeewrlWyFR1e' target='_blank'>
-                <div className='projectName' style={{marginLeft:'10px', backgroundColor:'lightcoral',color:'#fff',boxShadow:'0px 0px 10px rgba(0,0,0,0.4)',cursor:'pointer'}}>Android 어플 다운</div>
+                <div className='projectName' style={{ backgroundColor:'lightcoral',color:'#fff',boxShadow:'0px 0px 10px rgba(0,0,0,0.4)',cursor:'pointer'}}>Android 어플 다운</div>
                 </a>
                 <p className='date'>2024. 11</p>
                 <div className='imgdiv'>
