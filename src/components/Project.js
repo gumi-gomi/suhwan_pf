@@ -482,7 +482,7 @@ const Project = () => {
               {/* ----------------------1번프로젝트 */}
               <div className='project'>
                 <div className='projectName'>GG-ILLUST(일러스트 판매 사이트)</div>
-                <a href='https://drive.google.com/uc?export=download&id=1Exxve-Vd0x5TRHJTHTIN5dtHZB-hJtCh' target='_blank'>
+                <a href='https://drive.google.com/uc?export=download&id=1PXgwig4977ZV1yx3knQ7wYQKX3fUmzIT' target='_blank'>
                 <div className='projectName' style={{marginLeft:'10px', backgroundColor:'lightcoral',color:'#fff',boxShadow:'0px 0px 10px rgba(0,0,0,0.4)',cursor:'pointer'}}>Android 어플 다운</div>
                 </a>
                 <p className='date'>2024. 11</p>
