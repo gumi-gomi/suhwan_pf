@@ -657,12 +657,12 @@ const Project = () => {
 
               {/* ---------------------------------------3번 프로젝트 */}
               <div className='project'>
-              <div className='projectName'>크몽 외주작업 포트폴리오</div>
+              <div className='projectName'>랜딩페이지 샘플 2</div>
                 <p className='date'>2024. 9</p>
                 <div className='imgdiv'>
                 <img src={kmongimg} ></img>
                 </div>
-                <p className='detail'>프리랜서 외주사이트 '크몽'의 작업 설명을 위한 페이지</p>
+                <p className='detail'>키프레임 연습을 위한 페이지</p>
                 <ul className='list'>
                   <li>Adobe AfterEffect, Photoshop을 이용한 애니메이션 작업</li>
                   <li>keyframe을 활용한 요소 움직임 구현</li>
@@ -789,12 +789,12 @@ const Project = () => {
         <ModalBackground onClick={handleCloseModal3}>
           <ModalContent onClick={(e) => e.stopPropagation()}> 
             <CloseButton onClick={handleCloseModal3}>&times;</CloseButton>
-            <h3>크몽 외주작업 포트폴리오</h3>
+            <h3>랜딩페이지 샘플 2</h3>
             <p className='date'>2024. 11</p>
                 <p className='url'>- Homepage URL -</p>
                 <a className='link' href='https://gumi-gomi.github.io/kmong_pj/build/' target='_blank'><p>gumi-gomi.github.io/kmong-pj</p></a>
                 <p className='summary'>- Summary -</p>
-                <p className='detail'>프리랜서 외주사이트 '크몽'의 작업 설명을 위한 페이지</p>
+                <p className='detail'>키프레임 애니메이션 연습을 위한 페이지</p>
                 <ul className='list'>
                 <li>Adobe AfterEffect, Photoshop을 이용한 애니메이션 작업</li>
                 <li>keyframe을 활용한 요소 움직임 구현</li>
