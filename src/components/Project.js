@@ -656,7 +656,7 @@ const Project = () => {
       
 
               {/* ---------------------------------------3번 프로젝트 */}
-             {/*  <div className='project'>
+              <div className='project'>
               <div className='projectName'>크몽 외주작업 포트폴리오</div>
                 <p className='date'>2024. 9</p>
                 <div className='imgdiv'>
@@ -677,7 +677,7 @@ const Project = () => {
                     <i className="fa-solid fa-book"></i>
                     <p>README</p>
                   </div>
-              </div> */}
+              </div>
 
               {/* --------------------------------------- 4번 프로젝트 */}
 
@@ -784,7 +784,7 @@ const Project = () => {
 
       {/* ----------------------------------------- 크몽 외주작업 포폴 */}
 
-{/* 
+
       {isModalOpen3 && (
         <ModalBackground onClick={handleCloseModal3}>
           <ModalContent onClick={(e) => e.stopPropagation()}> 
@@ -803,8 +803,8 @@ const Project = () => {
                 <p className='backgroundDetail'>외주플랫폼에서 그림작업과, 간단한 랜딩페이지 작업을 하기위한 소개페이지가 필요해서 제작하게 되었습니다. </p>
                 <p className='meaning'>- Detail - </p>
                 <p className='meaningDetail'>
-                  &nbsp;외주작업을 위한 간단한 설명페이지가 필요해서 작업하였습니다.<br/> 시선을 끌기위해 구글에서 여러 이미지를 찾아 어도비의 After Effects에서 애니메이션작업 후 프레임마다 png로 저장한 뒤 Photoshop을 이용하여 움직이는 gif를 생성하고 화면에 추가하였습니다. 그림서비스는 크몽으로 바로가기 되도록 링크를 달았고, 페이지개발서비스는 Sample페이지에서 작업물을 확인할 수 있도록 구성했으며, 3가지의 작업물을 확인할 수 있습니다.<br/><br/>
-                  &nbsp;이 작업들을 진행하면서 들었던 생각은 png, gif, jpg등 화면에 표현되는 이미지가 많아질 때 페이지 로딩속도와 그 이미지들을 불러오는 과정에서 사용되는 호스팅 비용이 많아질 것이라는 생각이 들었고, webp파일로 변환하여 적용하여 파일의 크기를 최대한 줄이고 빠르게 로드될 수 있도록 하였습니다.
+                  시선을 끌기위해 구글에서 여러 이미지를 찾아 어도비의 After Effects에서 애니메이션작업 후 프레임마다 png로 저장한 뒤 Photoshop을 이용하여 움직이는 gif를 생성하고 화면에 추가하였습니다. 그림서비스는 하단의 인스타그램링크로 바로가기 하도록 하였고, 페이지개발서비스는 Sample페이지에서 작업물을 확인할 수 있도록 구성했습니다.<br/><br/>
+                
                 </p>
                 <div className='usedskill'>
                   <p>
@@ -814,7 +814,7 @@ const Project = () => {
           </ModalContent>
         </ModalBackground>
       )}
-      */}
+     
       
       {/* --------------------------------------------- 4번쨰 모달 */}
       {isModalOpen4 && (
