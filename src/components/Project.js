@@ -499,65 +499,7 @@ const Project = () => {
 
           <div className='projectBtm'>
 
-              {/* ----------------------1번프로젝트 */}
-              <div className='project'>
-                <div className='projectName'style={{marginRight:'5px'}}>GG-ILLUST(일러스트판매)</div>
-                <a href='https://drive.google.com/uc?export=download&id=1coFOwb4NtsLsKA4SP08AqeewrlWyFR1e' target='_blank'>
-                <div className='projectName' style={{ backgroundColor:'lightcoral',color:'#fff',boxShadow:'0px 0px 10px rgba(0,0,0,0.4)',cursor:'pointer'}}>Android 어플 다운</div>
-                </a>
-                <p className='date'>2024. 11</p>
-                <div className='imgdiv'>
-                  <img src={gumigomiimg} ></img>
-                </div>
-                <p className='detail'>Firebase / Kakao Pay api를 연동한 일러스트 판매 사이트</p>
-                <ul className='list'>
-                  <li>사이트 운영 경험을 목표로 개발</li>
-                  <li>Firebase Auth, Database, Hosting 활용</li>
-                  <li>Kakao Pay api를 활용한 온라인 결제서비스 구축</li>
-                  <li>React-native를 이용한 어플 연동</li>
-                  {/* <li style={{color:'red', fontWeight:'700'}}>리액트 네이티브(어플)와 연동을 위해 현재 결제로직 수정중</li> */}
-                </ul>
-                <a className='link' href='https://gumigomi-illust.com' target='_blank'><p>https://gumigomi-illust.com</p></a>
-                <div className='usedskill'>
-                  <p>
-                    React, Scss, Firebase, Kakaopay api, PS, AI
-                  </p>
-                  </div>
-                  <div className='popup' onClick={handleOpenModal}>
-                    <i className="fa-solid fa-book"></i>
-                    <p>README</p>
-                  </div>
-              </div>
-              {/* ------------------------------------------- ai프로젝트 */}
-
-               <div className='project'>
-                <div className='projectName'style={{marginRight:'5px'}}>PROMPIC(DALL-E 3기반 이미지생성)</div>
-                {/* <a href='https://drive.google.com/uc?export=download&id=1coFOwb4NtsLsKA4SP08AqeewrlWyFR1e' target='_blank'></a> */}
-                <p className='date'>2024. 11</p>
-                <div className='imgdiv'>
-                  <img src={prompicimg} ></img>
-                </div>
-                <p className='detail'>Dall-E-3 AI 이미지생성 사이트</p>
-                <ul className='list'>
-                  {/* <li>사이트 운영 경험을 목표로 개발</li> */}
-                  <li>Firebase Auth, Database, Functions, Hosting 활용</li>
-                  <li>TOSS결제를 활용한 온라인 결제서비스 구축</li>
-                  <li>Dall-E-3를 연동, 프롬프트로 이미지 생성</li>
-                  {/* <li style={{color:'red', fontWeight:'700'}}>리액트 네이티브(어플)와 연동을 위해 현재 결제로직 수정중</li> */}
-                </ul>
-                <a className='link' href='https://prompic.kr' target='_blank'><p>https://prompic.kr</p></a>
-                <div className='usedskill'>
-                  <p>
-                    React, Firebase, AI
-                  </p>
-                  </div>
-                  <div className='popup' onClick={handleOpenModal0}>
-                    <i className="fa-solid fa-book"></i>
-                    <p>README</p>
-                  </div>
-              </div>
-        
-              {/* -------------------------------------- 2번 프로젝트 */}
+            {/* -------------------------------------- 2번 프로젝트 */}
               <div className='project'>
               <div className='projectName'>기업형페이지디자인 샘플</div>
                 <p className='date'>2024. 12</p>
@@ -589,39 +531,38 @@ const Project = () => {
                   </div>
               </div>
 
-              {/* --------------------------------- brander */}
+              {/* ----------------------1번프로젝트 */}
               <div className='project'>
-              <div className='projectName'>기업형페이지디자인 샘플2</div>
-                <p className='date'>2024. 12</p>
+                <div className='projectName'style={{marginRight:'5px'}}>GG-ILLUST (일러스트판매)</div>
+                <a href='https://drive.google.com/uc?export=download&id=1coFOwb4NtsLsKA4SP08AqeewrlWyFR1e' target='_blank'>
+                {/* <div className='projectName' style={{ backgroundColor:'lightcoral',color:'#fff',boxShadow:'0px 0px 10px rgba(0,0,0,0.4)',cursor:'pointer'}}>Android 어플 다운</div> */}
+                </a>
+                <p className='date'>2024. 11</p>
                 <div className='imgdiv'>
-                <img src={sample5} ></img>
+                  <img src={gumigomiimg} ></img>
                 </div>
-                <p className='detail'>기업형 페이지 디자인2</p>
+                <p className='detail'>일러스트 판매 사이트 (GG-ILLUST)</p>
                 <ul className='list'>
-                  <li>기업형페이지 샘플 작업</li>
+                  {/* <li>사이트 운영 경험을 목표로 개발</li> */}
+                  {/* <li>Firebase Auth, Database, Hosting 활용</li> */}
+                  <li>일러스트 판매 컨셉의 사이트 디자인</li>
+                  <li>결제와 회원가입 기능 추가</li>
+                  {/* <li>React-native를 이용한 어플 연동</li> */}
+                  {/* <li style={{color:'red', fontWeight:'700'}}>리액트 네이티브(어플)와 연동을 위해 현재 결제로직 수정중</li> */}
                 </ul>
-                <a className='link' href='https://gumi-gomi.github.io/pub4/build' target='_blank'><p>gumi-gomi.github.io/pub4_proj</p></a>
+                <a className='link' href='https://gumigomi-illust.com' target='_blank'><p>https://gumigomi-illust.com</p></a>
                 <div className='usedskill'>
                   <p>
-                    React, Scss, PS
+                    React, Scss, Firebase, Kakaopay api, PS, AI
                   </p>
                   </div>
-                  <div style={{display:'flex'}}>
-
-                  <div className='popup' onClick={handleOpenModal5}>
+                  <div className='popup' onClick={handleOpenModal}>
                     <i className="fa-solid fa-book"></i>
                     <p>README</p>
                   </div>
-                   {/*  <a href='https://naver.com' target='_blank' style={{textDecoration:'none',color:'#000'}}>
-                  <div className='popup' style={{marginLeft:'15px',backgroundColor:'rgba(255,150,100,0.4)'}}>
-                    <p style={{fontWeight:'700'}}>ADMIN PAGE</p>
-                  </div>
-                    </a> */}
-                  </div>
               </div>
-              {/* --------------------------------- brander 끝 */}
 
-              {/* ------------------------------------ 요식업사이트 시작*/}
+                     {/* ------------------------------------ 요식업사이트 시작*/}
               <div className='project'>
               <div className='projectName'>요식업디자인 샘플</div>
                 <p className='date'>2025. 1</p>
@@ -655,6 +596,72 @@ const Project = () => {
 
 
               {/* ------------------------------------ 요식업사이트 끝*/}
+
+
+              {/* ------------------------------------------- ai프로젝트 */}
+
+               <div className='project'>
+                <div className='projectName'style={{marginRight:'5px'}}>PROMPIC (이미지생성사이트)</div>
+                {/* <a href='https://drive.google.com/uc?export=download&id=1coFOwb4NtsLsKA4SP08AqeewrlWyFR1e' target='_blank'></a> */}
+                <p className='date'>2024. 11</p>
+                <div className='imgdiv'>
+                  <img src={prompicimg} ></img>
+                </div>
+                <p className='detail'>Dall-E-3 AI 이미지생성 사이트</p>
+                <ul className='list'>
+                  {/* <li>사이트 운영 경험을 목표로 개발</li> */}
+                  <li>Firebase Auth, Database, Functions, Hosting 활용</li>
+                  <li>TOSS결제를 활용한 온라인 결제서비스 구축</li>
+                  <li>Dall-E-3를 연동, 프롬프트로 이미지 생성</li>
+                  {/* <li style={{color:'red', fontWeight:'700'}}>리액트 네이티브(어플)와 연동을 위해 현재 결제로직 수정중</li> */}
+                </ul>
+                <a className='link' href='https://prompic.kr' target='_blank'><p>https://prompic.kr</p></a>
+                <div className='usedskill'>
+                  <p>
+                    React, Firebase, AI
+                  </p>
+                  </div>
+                  <div className='popup' onClick={handleOpenModal0}>
+                    <i className="fa-solid fa-book"></i>
+                    <p>README</p>
+                  </div>
+              </div>
+        
+              
+
+              {/* --------------------------------- brander */}
+              <div className='project'>
+              <div className='projectName'>기업형페이지디자인 샘플2</div>
+                <p className='date'>2024. 12</p>
+                <div className='imgdiv'>
+                <img src={sample5} ></img>
+                </div>
+                <p className='detail'>기업형 페이지 디자인2</p>
+                <ul className='list'>
+                  <li>기업형페이지 샘플 작업</li>
+                </ul>
+                <a className='link' href='https://gumi-gomi.github.io/pub4/build' target='_blank'><p>gumi-gomi.github.io/pub4_proj</p></a>
+                <div className='usedskill'>
+                  <p>
+                    React, Scss, PS
+                  </p>
+                  </div>
+                  <div style={{display:'flex'}}>
+
+                  <div className='popup' onClick={handleOpenModal5}>
+                    <i className="fa-solid fa-book"></i>
+                    <p>README</p>
+                  </div>
+                   {/*  <a href='https://naver.com' target='_blank' style={{textDecoration:'none',color:'#000'}}>
+                  <div className='popup' style={{marginLeft:'15px',backgroundColor:'rgba(255,150,100,0.4)'}}>
+                    <p style={{fontWeight:'700'}}>ADMIN PAGE</p>
+                  </div>
+                    </a> */}
+                  </div>
+              </div>
+              {/* --------------------------------- brander 끝 */}
+
+             
 
               {/* ------------------------ 랜딩페이지 시작 */}
               <div className='project'>

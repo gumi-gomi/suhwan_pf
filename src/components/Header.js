@@ -55,7 +55,7 @@ const HeaderAll = styled.div`
       padding-top: 190px;
       text-align: center;
       .h2{
-        font-size: 50px;
+        font-size: 45px;
         word-break: keep-all;
         overflow-wrap: normal;
         white-space: normal;
@@ -72,7 +72,7 @@ const HeaderAll = styled.div`
   }
     
   }
-  @media screen and (max-width:460px) {
+  @media screen and (max-width:500px) {
     width: 100%; height: 600px;
   margin: 0 auto;
   background-image: url(${Headerimg});
@@ -89,7 +89,8 @@ const HeaderAll = styled.div`
       padding-top: 190px;
       text-align: center;
       .h2{
-        font-size: 40px;
+        letter-spacing: -1px;
+        font-size: 35px;
         word-break: keep-all;
         overflow-wrap: normal;
         white-space: normal;
@@ -98,6 +99,7 @@ const HeaderAll = styled.div`
       }
       p{
         margin-top: 50px;
+        font-size: 12px;
         line-height: 30px;
         font-weight: 400;
       }
@@ -179,12 +181,11 @@ const Header = ({ scrollToSection, refs }) => {
        
           <div className='headerBtm'>
             <p className='h2'>- 김수환 -<br/>
-                프론트엔드 개발자 포트폴리오
+                웹 UI 개발 포트폴리오
             </p>
             <p>안녕하세요.<br/>
-               프론트 엔드 개발자 김수환입니다.<br/>
-               사용자의 경험에 귀 기울이는 개발자가 되겠습니다.
-
+               사용자 경험을 생각하며 웹 UI를 개발하는 김수환입니다.<br/>
+               직관적이고 유연한 웹 인터페이스를 구현하는 데 집중하고 있습니다.
             </p>
           </div>
         </div>

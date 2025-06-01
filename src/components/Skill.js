@@ -47,7 +47,7 @@ const SkillWrap = styled.div`
       background-color: #fff;
       margin-top: 40px;
       border-radius: 15px;
-      box-shadow: 5px 5px 20px rgba(0,0,0,0.5);
+      box-shadow: 5px 5px 10px rgba(0,0,0,0.3);
       display: flex;
       flex-direction: column;
       align-items: center;
@@ -226,17 +226,17 @@ const Skill = () => {
                 <li style={{backgroundColor:'royalblue', color:'#Fff'}}>Html</li>
                 <li style={{backgroundColor:'yellow'}}>JS</li>
                 <li style={{backgroundColor:'yellowgreen'}}>css</li>
-                <li style={{backgroundColor:'lightcoral'}}>SCSS</li>
+                {/* <li style={{backgroundColor:'lightcoral'}}>SCSS</li> */}
               </ul>
             </div>
-
+{/* 
             <div className='skill'>
               <div className='backendImg'></div>
               <p>Backend</p>
               <ul>
                 <li style={{backgroundColor:'rgba(210,80,23,1)',color:'#fff'}}>Firebase</li>
               </ul>
-            </div>
+            </div> */}
 
             <div className='skill'>
               <div className='languageImg'></div>
