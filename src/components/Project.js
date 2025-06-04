@@ -705,7 +705,7 @@ const Project = () => {
                 <div className='imgdiv'>
                 <img src={kmongimg} ></img>
                 </div>
-                <p className='detail'>키프레임 연습을 위한 페이지</p>
+                <p className='detail'>랜딩페이지 디자인2</p>
                 <ul className='list'>
                   <li>Adobe AfterEffect, Photoshop을 이용한 애니메이션 작업</li>
                   <li>keyframe을 활용한 요소 움직임 구현</li>
