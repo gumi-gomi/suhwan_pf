@@ -3,6 +3,7 @@ import styled from 'styled-components'
 import gumigomiimg from '../img/gumigomiimg.webp'
 // import prompicimg from '../img/prompicimg.webp'
 import h3llo from "../img/H3LLO.webp"
+import card from "../img/card.webp"
 import cardgameimg from '../img/cardgameimg.webp'
 import kmongimg from '../img/kmongimg.webp'
 // import dentalimg from '../img/dentalimg.webp'
@@ -371,6 +372,7 @@ const Project = () => {
   const [isModalOpen5, setIsModalOpen5] = useState(false);
   const [isModalOpen6, setIsModalOpen6] = useState(false);
   const [isModalOpen7, setIsModalOpen7] = useState(false);
+  const [isModalOpen20, setIsModalOpen20] = useState(false);
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -395,6 +397,9 @@ const Project = () => {
   };
   const handleOpenModal7 = () => {
     setIsModalOpen7(true);
+  };
+  const handleOpenModa20 = () => {
+    setIsModalOpen20(true);
   };
 
 
@@ -421,6 +426,9 @@ const Project = () => {
   };
   const handleCloseModal7 = () => {
     setIsModalOpen7(false);
+  };
+   const handleCloseModa20 = () => {
+    setIsModalOpen20(false);
   };
 
 
@@ -487,6 +495,18 @@ const Project = () => {
     };
   }, [isModalOpen4]);
 
+  useEffect(() => {
+    if (isModalOpen20) {
+      document.body.style.overflow = 'hidden'; // 모달이 열리면 배경 스크롤 잠금
+    } else {
+      document.body.style.overflow = 'auto'; // 모달이 닫히면 배경 스크롤 해제
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto'; // 컴포넌트 언마운트 시에도 스크롤 해제
+    };
+  }, [isModalOpen20]);
+
 
 
 
@@ -529,7 +549,35 @@ const Project = () => {
                     <p>README</p>
                   </div>
               </div>
+
+              {/* -------------------------------- cardfactory 시작 */}
         
+                 <div className='project'>
+                <div className='projectName'style={{marginRight:'5px'}}>기업형페이지디자인 샘플3</div>
+                {/* <a href='https://drive.google.com/uc?export=download&id=1coFOwb4NtsLsKA4SP08AqeewrlWyFR1e' target='_blank'></a> */}
+                <p className='date'>2024. 11</p>
+                <div className='imgdiv'>
+                  <img src={card} ></img>
+                </div>
+                <p className='detail'>기업형 페이지 디자인</p>
+                <ul className='list'>
+                  {/* <li>사이트 운영 경험을 목표로 개발</li> */}
+                  <li>react를 활용한 페이지 구현</li>
+                  {/* <li>AI를 활용한 이미지 생성 & 활용</li> */}
+                  
+                  {/* <li style={{color:'red', fontWeight:'700'}}>리액트 네이티브(어플)와 연동을 위해 현재 결제로직 수정중</li> */}
+                </ul>
+                <a className='link' href='https://gumi-gomi.github.io/cardfactory/build/' target='_blank'><p>https://cardfactory.co.kr</p></a>
+                <div className='usedskill'>
+                  <p>
+                    React
+                  </p>
+                  </div>
+                  <div className='popup' onClick={handleOpenModa20}>
+                    <i className="fa-solid fa-book"></i>
+                    <p>README</p>
+                  </div>
+              </div>
 
 
 
@@ -819,6 +867,40 @@ const Project = () => {
                 <div className='usedskill'>
                   <p>
                     HTML, CSS, SCSS, JS, PS
+                  </p>
+                  </div>
+          </ModalContent>
+        </ModalBackground>
+      )}
+
+      {/* -------------------------- cardfactory 모달 */}
+
+       {isModalOpen20 && (
+        <ModalBackground onClick={handleCloseModa20}>
+          <ModalContent onClick={(e) => e.stopPropagation()}> {/* 모달 클릭 시 닫히지 않도록 */}
+            <CloseButton onClick={handleCloseModa20}>&times;</CloseButton>
+            <h3>기업형 페이지 디자인</h3>
+            <p className='date'>2024. 11</p>
+                <p className='url'>- Homepage URL -</p>
+                <a className='link' href='https://gumi-gomi.github.io/cardfactory/build/' target='_blank'><p>https://cardfactory.kr</p></a>
+                <p className='summary'>- Summary -</p>
+                <p className='detail'>기업형 디자인 페이지 샘플</p>
+                <ul className='list'>
+                  {/* <li>사이트 운영경험을 목표로 개발 </li> */}
+                  <li>React를 활용한 페이지 구현</li>
+                  {/* <li>AI를 활용한 이미지 생성 & 활용</li> */}
+                </ul>
+                {/* <p className='background'>- Background -</p> */}
+                {/* <p className='backgroundDetail'>Open api를 사용해서 사이트를 만들어보고 싶어서 진행하게 되었습니다.</p> */}
+                <p className='meaning'>- Detail - </p>
+                <p className='meaningDetail'>
+                  REACT + R3F를 사용하여 카드사페이지를 제작하였습니다. 
+                  {/* <span style={{color:'rgba(256,0,0,1)',fontWeight:"700"}}>(현재 카카오페이 가맹점 심사중이라서 실제 거래는 할 수 없고 회원가입 후 테스트결제로 확인할 수 있습니다.)</span> */}
+
+                </p>
+                <div className='usedskill'>
+                  <p>
+                    React, Ps
                   </p>
                   </div>
           </ModalContent>
