@@ -66,7 +66,7 @@ const ProjectWrap = styled.div`
             }
       .project{
         border-radius: 10px;
-        width: 550px;
+        /* width: 550px; */
         max-width: 550px;
         height: 800px;
         box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
