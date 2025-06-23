@@ -12,6 +12,19 @@ import sample3 from '../img/sample3.webp'
 import sample5 from '../img/sample5.webp'
 import sample7 from '../img/sample7.webp'
 
+import edito1 from '../img/edito1.png'
+import edito2 from '../img/edito2.png'
+import edito3 from '../img/edito3.png'
+import edito4 from '../img/edito4.png'
+
+import modalImg1 from '../img/design_modal1.png';
+import modalImg2 from '../img/design_modal2.png';
+import modalImg3 from '../img/design_modal3.png';
+import modalImg4 from '../img/design_modal4.png';
+
+const designModals = [modalImg1, modalImg2, modalImg3, modalImg4];
+
+
 const ProjectAll = styled.div`
  width: 100%;
  height: auto;
@@ -45,8 +58,15 @@ const ProjectWrap = styled.div`
       padding-left: 20px;
       padding-right: 20px;
       box-sizing: border-box;
+        transition: opacity 0.3s ease-in-out;
+          opacity: 1;
+
+            &.fade-out {
+                opacity: 0;
+            }
       .project{
         border-radius: 10px;
+        width: 550px;
         max-width: 550px;
         height: 800px;
         box-shadow: 0px 0px 8px rgba(0,0,0,0.3);
@@ -57,6 +77,9 @@ const ProjectWrap = styled.div`
 
         @media screen and (max-width: 500px) {
           padding: 20px;
+        }
+        &.designbox{
+          height: auto;
         }
 
         .imgdiv{
@@ -359,6 +382,34 @@ const CloseButton = styled.button`
   cursor: pointer;
 `;
 
+const FadeWrap = styled.div`
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+
+  &.fade-out {
+    opacity: 0;
+  }
+`;
+
+const DesignModalContent = styled.div`
+   background-color: white;
+  padding: 0;
+  border-radius: 10px;
+  max-width: 100vw;
+  max-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+
+  img {
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+    display: block;
+  }
+`;
 
 // ------------------ 모달팝업 끝 -------------
 
@@ -373,6 +424,19 @@ const Project = () => {
   const [isModalOpen6, setIsModalOpen6] = useState(false);
   const [isModalOpen7, setIsModalOpen7] = useState(false);
   const [isModalOpen20, setIsModalOpen20] = useState(false);
+
+   const [activeTab, setActiveTab] = useState('web');
+   const [fadeClass, setFadeClass] = useState('');
+   const [activeDesignModalIndex, setActiveDesignModalIndex] = useState(null);
+  const [designModalIndex, setDesignModalIndex] = useState(null);
+
+   const handleDesignModalOpen = (index) => {
+  setDesignModalIndex(index);
+};
+
+const handleDesignModalClose = () => {
+  setDesignModalIndex(null);
+};
 
   const handleOpenModal = () => {
     setIsModalOpen(true);
@@ -508,19 +572,61 @@ const Project = () => {
   }, [isModalOpen20]);
 
 
-
+ const handleTabChange = (tab) => {
+  if (tab === activeTab) return;
+  setFadeClass('fade-out');
+  setTimeout(() => {
+    setActiveTab(tab);
+    setFadeClass('');
+  }, 300); // transition 시간
+};
 
   return (
     <>
       <ProjectAll>
+               <div style={{ marginBottom: '30px', textAlign: 'center',paddingTop:'40px' }}>
+        <button
+          onClick={() => handleTabChange('web')}
+          
+          style={{
+            fontWeight: activeTab === 'web' ? 'bold' : 'normal',
+            // textDecoration: activeTab === 'web' ? 'underline' : 'none',
+            fontSize: '20px',
+            marginRight: '20px',
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer',
+          }}
+        >
+          WEB PROJECTS
+        </button>
+        <button
+          onClick={() => handleTabChange('design')}
+          style={{
+            fontWeight: activeTab === 'design' ? 'bold' : 'normal',
+            // textDecoration: activeTab === 'design' ? 'underline' : 'none',
+            fontSize: '20px',
+            background: 'none',
+            border: 'none',
+            cursor: 'pointer',
+          }}
+        >
+          DESIGN PROJECTS
+        </button>
+      </div>
       <ProjectWrap>
       <div className='projectTitle'>
-              <h2>PROJECTS</h2>
-          </div>
+          <h2>{activeTab === 'web' ? 'WEB PROJECTS' : 'DESIGN PROJECTS'}</h2>
+      </div>
 
+          <FadeWrap className={fadeClass}>
+
+        
           <div className='projectBtm'>
+            {activeTab === 'web' ?(
+              <>
 
-            
+                
               {/* ------------------------------------------- ai프로젝트 */}
 
                <div className='project'>
@@ -805,7 +911,62 @@ const Project = () => {
               </div>
 
 
+              </>
+            ) : (
+              <>
+                {[edito1, edito2, edito3, edito4].map((img, index) => (
+                  <div key={index}>
+                    <div
+      className="project designbox"
+      style={{ padding: '0px', cursor: 'pointer' }}
+      onClick={() => handleDesignModalOpen(index)}
+    >
+      <img
+        src={img}
+        style={{
+          width: '100%',
+          height: 'auto',
+          display: 'block',
+          borderRadius: '10px',
+        }}
+      />
+    </div>
+  </div>
+))}
+{designModalIndex !== null && (
+  <ModalBackground onClick={handleDesignModalClose}>
+    <DesignModalContent onClick={(e) => e.stopPropagation()}>
+      <CloseButton onClick={handleDesignModalClose}>&times;</CloseButton>
+      <div
+        style={{
+          maxHeight: '80vh',
+          maxWidth: '90vw',
+          overflow: 'auto',
+        }}
+      >
+        <img
+          src={designModals[designModalIndex]}
+          alt={`Design Modal ${designModalIndex + 1}`}
+          style={{
+            width: 'auto',
+            height: 'auto',
+            maxWidth: '100%',
+            display: 'block',
+          }}
+        />
+      </div>
+    </DesignModalContent>
+  </ModalBackground>
+)}
+              </>
+            )}
+
+            
+
           </div>
+              </FadeWrap>
+
+        
       </ProjectWrap>
       </ProjectAll>
       
