@@ -12,15 +12,15 @@ import sample3 from '../img/sample3.webp'
 import sample5 from '../img/sample5.webp'
 import sample7 from '../img/sample7.webp'
 
-import edito1 from '../img/edito1.png'
-import edito2 from '../img/edito2.png'
-import edito3 from '../img/edito3.png'
-import edito4 from '../img/edito4.png'
+import edito1 from '../img/edito1.webp'
+import edito2 from '../img/edito2.webp'
+import edito3 from '../img/edito3.webp'
+import edito4 from '../img/edito4.webp'
 
-import modalImg1 from '../img/design_modal1.png';
-import modalImg2 from '../img/design_modal2.png';
-import modalImg3 from '../img/design_modal3.png';
-import modalImg4 from '../img/design_modal4.png';
+import modalImg1 from '../img/design_modal1.webp';
+import modalImg2 from '../img/design_modal2.webp';
+import modalImg3 from '../img/design_modal3.webp';
+import modalImg4 from '../img/design_modal4.webp';
 
 const designModals = [modalImg1, modalImg2, modalImg3, modalImg4];
 
