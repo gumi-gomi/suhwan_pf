@@ -411,6 +411,38 @@ const DesignModalContent = styled.div`
   }
 `;
 
+const Illust = styled.div`
+margin-top: 80px;
+margin-bottom: 100px;
+/* outline: 1px dotted red; */
+h2{
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+a{
+  display: block;
+  width: 100%;
+  outline: 1px solid rgba(0,0,0,0.1);
+  padding: 15px;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  font-size: 30px;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(54,54,54,1);
+  font-weight: 700;
+  transition: 0.2s;
+
+ &:hover{
+  scale: 1.02;
+ }
+}
+
+`
+
 // ------------------ 모달팝업 끝 -------------
 
 
@@ -958,6 +990,10 @@ const handleDesignModalClose = () => {
     </DesignModalContent>
   </ModalBackground>
 )}
+<Illust>
+  <h2>character illust</h2>
+  <a href="https://www.instagram.com/gumi_gomi/" target='_blank'>Instagram - gumi_gomi</a>
+</Illust>
               </>
             )}
 
