@@ -990,10 +990,10 @@ const handleDesignModalClose = () => {
     </DesignModalContent>
   </ModalBackground>
 )}
-<Illust>
+{/* <Illust>
   <h2>character illust</h2>
   <a href="https://www.instagram.com/gumi_gomi/" target='_blank'>Instagram - gumi_gomi</a>
-</Illust>
+</Illust> */}
               </>
             )}
 
