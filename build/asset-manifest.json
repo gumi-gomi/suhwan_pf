@@ -1,20 +1,21 @@
 {
   "files": {
     "main.css": "./static/css/main.e6651665.css",
-    "main.js": "./static/js/main.c31a2bfb.js",
+    "main.js": "./static/js/main.7b71abdf.js",
     "static/media/H3LLO.webp": "./static/media/H3LLO.4be7d9618ff500bb28f4.webp",
+    "static/media/design_modal1.webp": "./static/media/design_modal1.708f031338169fd78a73.webp",
     "static/media/design_modal3.webp": "./static/media/design_modal3.eefe1c748469df1814aa.webp",
-    "static/media/design_modal2.webp": "./static/media/design_modal2.2d93dd6d799e4484a7cc.webp",
+    "static/media/design_modal5.webp": "./static/media/design_modal5.2d93dd6d799e4484a7cc.webp",
     "static/media/design_modal4.webp": "./static/media/design_modal4.acc83e02f2ea9619f732.webp",
-    "static/media/design_modal1.webp": "./static/media/design_modal1.18a256e837ac162008b7.webp",
+    "static/media/design_modal2.webp": "./static/media/design_modal2.18a256e837ac162008b7.webp",
     "static/media/sample7.webp": "./static/media/sample7.ae84cdf6cf876fbbc065.webp",
     "static/media/sample3.webp": "./static/media/sample3.c3d8b1c303ab7ac5b06c.webp",
     "static/media/edito3.webp": "./static/media/edito3.c51f3eada55cc53c03de.webp",
     "static/media/gumigomiimg.webp": "./static/media/gumigomiimg.0bd6a4afb8b60b0c69ab.webp",
     "static/media/edito4.webp": "./static/media/edito4.b8504a38974a7383fd5a.webp",
-    "static/media/edito2.webp": "./static/media/edito2.3af6fca01b6312098f10.webp",
+    "static/media/edito5.webp": "./static/media/edito5.3af6fca01b6312098f10.webp",
     "static/media/kmongimg.webp": "./static/media/kmongimg.5b5b2b2f9e5e72e036ae.webp",
-    "static/media/edito1.webp": "./static/media/edito1.ddc894e87745b4c538fd.webp",
+    "static/media/edito2.webp": "./static/media/edito2.ddc894e87745b4c538fd.webp",
     "static/media/languageimg.png": "./static/media/languageimg.b0b056458b1a1171e48d.png",
     "static/media/cardgameimg.webp": "./static/media/cardgameimg.4a30a02376fc592fcc91.webp",
     "static/media/header.webp": "./static/media/header.9a496187fbf6ea3dcedd.webp",
@@ -22,15 +23,16 @@
     "static/media/sample5.webp": "./static/media/sample5.64a50ffcb0cf859e0edf.webp",
     "static/media/card.webp": "./static/media/card.107f999f2af2974f9e50.webp",
     "static/media/sample2.webp": "./static/media/sample2.0a86d596e7df3f681bf6.webp",
+    "static/media/edito1.webp": "./static/media/edito1.a5cb4c59ddf3d15e9cc1.webp",
     "static/media/endingimg.webp": "./static/media/endingimg.5d38e102979e7f752b5e.webp",
     "static/media/htmlimg.png": "./static/media/htmlimg.35c3f2262d858d120175.png",
     "static/media/certiimg.webp": "./static/media/certiimg.59094871270aa048fd87.webp",
     "index.html": "./index.html",
     "main.e6651665.css.map": "./static/css/main.e6651665.css.map",
-    "main.c31a2bfb.js.map": "./static/js/main.c31a2bfb.js.map"
+    "main.7b71abdf.js.map": "./static/js/main.7b71abdf.js.map"
   },
   "entrypoints": [
     "static/css/main.e6651665.css",
-    "static/js/main.c31a2bfb.js"
+    "static/js/main.7b71abdf.js"
   ]
 }

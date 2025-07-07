@@ -16,13 +16,15 @@ import edito1 from '../img/edito1.webp'
 import edito2 from '../img/edito2.webp'
 import edito3 from '../img/edito3.webp'
 import edito4 from '../img/edito4.webp'
+import edito5 from '../img/edito5.webp'
 
 import modalImg1 from '../img/design_modal1.webp';
 import modalImg2 from '../img/design_modal2.webp';
 import modalImg3 from '../img/design_modal3.webp';
 import modalImg4 from '../img/design_modal4.webp';
+import modalImg5 from '../img/design_modal5.webp';
 
-const designModals = [modalImg1, modalImg2, modalImg3, modalImg4];
+const designModals = [modalImg1, modalImg2, modalImg3, modalImg4, modalImg5];
 
 
 const ProjectAll = styled.div`
@@ -946,7 +948,7 @@ const handleDesignModalClose = () => {
               </>
             ) : (
               <>
-                {[edito1, edito2, edito3, edito4].map((img, index) => (
+                {[edito1, edito2, edito3, edito4, edito5].map((img, index) => (
                   <div key={index}>
                     <div
       className="project designbox"
