@@ -6,6 +6,7 @@ import h3llo from "../img/H3LLO.webp"
 import card from "../img/card.webp"
 import cardgameimg from '../img/cardgameimg.webp'
 import kmongimg from '../img/kmongimg.webp'
+import prompicimg from '../img/prompicimg.webp'
 // import dentalimg from '../img/dentalimg.webp'
 import sample1 from '../img/sample2.webp'
 import sample3 from '../img/sample3.webp'
@@ -458,6 +459,7 @@ const Project = () => {
   const [isModalOpen6, setIsModalOpen6] = useState(false);
   const [isModalOpen7, setIsModalOpen7] = useState(false);
   const [isModalOpen20, setIsModalOpen20] = useState(false);
+  const [isModalOpen21, setIsModalOpen21] = useState(false);
 
    const [activeTab, setActiveTab] = useState('web');
    const [fadeClass, setFadeClass] = useState('');
@@ -499,6 +501,9 @@ const handleDesignModalClose = () => {
   const handleOpenModa20 = () => {
     setIsModalOpen20(true);
   };
+   const handleOpenModa21 = () => {
+    setIsModalOpen21(true);
+  };
 
 
   const handleCloseModal = () => {
@@ -528,6 +533,10 @@ const handleDesignModalClose = () => {
    const handleCloseModa20 = () => {
     setIsModalOpen20(false);
   };
+   const handleCloseModa21 = () => {
+    setIsModalOpen21(false);
+  };
+
 
 
 
@@ -604,6 +613,18 @@ const handleDesignModalClose = () => {
       document.body.style.overflow = 'auto'; // 컴포넌트 언마운트 시에도 스크롤 해제
     };
   }, [isModalOpen20]);
+
+   useEffect(() => {
+    if (isModalOpen21) {
+      document.body.style.overflow = 'hidden'; // 모달이 열리면 배경 스크롤 잠금
+    } else {
+      document.body.style.overflow = 'auto'; // 모달이 닫히면 배경 스크롤 해제
+    }
+
+    return () => {
+      document.body.style.overflow = 'auto'; // 컴포넌트 언마운트 시에도 스크롤 해제
+    };
+  }, [isModalOpen21]);
 
 
  const handleTabChange = (tab) => {
@@ -725,36 +746,7 @@ const handleDesignModalClose = () => {
                   </div>
               </div>
 
-               {/* -------------------------------- cardfactory 시작 */}
-        
-                 <div className='project'>
-                <div className='projectName'style={{marginRight:'5px'}}>기업형페이지디자인 샘플3</div>
-                {/* <a href='https://drive.google.com/uc?export=download&id=1coFOwb4NtsLsKA4SP08AqeewrlWyFR1e' target='_blank'></a> */}
-                <p className='date'>2024. 11</p>
-                <div className='imgdiv'>
-                  <img src={card} ></img>
-                </div>
-                <p className='detail'>기업형 페이지 디자인</p>
-                <ul className='list'>
-                  {/* <li>사이트 운영 경험을 목표로 개발</li> */}
-                  <li>react를 활용한 페이지 구현</li>
-                  {/* <li>AI를 활용한 이미지 생성 & 활용</li> */}
-                  
-                  {/* <li style={{color:'red', fontWeight:'700'}}>리액트 네이티브(어플)와 연동을 위해 현재 결제로직 수정중</li> */}
-                </ul>
-                <a className='link' href='https://gumi-gomi.github.io/cardfactory/build/' target='_blank'><p>https://cardfactory.co.kr</p></a>
-                <div className='usedskill'>
-                  <p>
-                    React
-                  </p>
-                  </div>
-                  <div className='popup' onClick={handleOpenModa20}>
-                    <i className="fa-solid fa-book"></i>
-                    <p>README</p>
-                  </div>
-              </div>
-
-
+              
               {/* ----------------------1번프로젝트 */}
               <div className='project'>
                 <div className='projectName'style={{marginRight:'5px'}}>GG-ILLUST (일러스트판매)</div>
@@ -785,6 +777,73 @@ const handleDesignModalClose = () => {
                     <p>README</p>
                   </div>
               </div>
+
+
+              
+
+              {/* ------------------------------------------- ai프로젝트 */}
+
+               <div className='project'>
+                <div className='projectName'style={{marginRight:'5px'}}>PROMPIC(DALL-E 3기반 이미지생성)</div>
+                {/* <a href='https://drive.google.com/uc?export=download&id=1coFOwb4NtsLsKA4SP08AqeewrlWyFR1e' target='_blank'></a> */}
+                <p className='date'>2024. 11</p>
+                <div className='imgdiv'>
+                  <img src={prompicimg} ></img>
+                </div>
+                <p className='detail'>Dall-E-3 AI 이미지생성 사이트</p>
+                <ul className='list'>
+                  {/* <li>사이트 운영 경험을 목표로 개발</li> */}
+                  <li>Firebase Auth, Database, Functions, Hosting 활용</li>
+                  <li>TOSS결제를 활용한 온라인 결제서비스 구축</li>
+                  <li>Dall-E-3를 연동, 프롬프트로 이미지 생성</li>
+                  {/* <li style={{color:'red', fontWeight:'700'}}>리액트 네이티브(어플)와 연동을 위해 현재 결제로직 수정중</li> */}
+                </ul>
+                <a className='link' href='https://prompic.kr' target='_blank'><p>https://prompic.kr</p></a>
+                <div className='usedskill'>
+                  <p>
+                    React, Firebase, AI
+                  </p>
+                  </div>
+                  <div className='popup' onClick={handleOpenModa21}>
+                    <i className="fa-solid fa-book"></i>
+                    <p>README</p>
+                  </div>
+              </div>
+
+ {/* -------------------------------- cardfactory 시작 */}
+        
+                 <div className='project'>
+                <div className='projectName'style={{marginRight:'5px'}}>기업형페이지디자인 샘플3</div>
+                {/* <a href='https://drive.google.com/uc?export=download&id=1coFOwb4NtsLsKA4SP08AqeewrlWyFR1e' target='_blank'></a> */}
+                <p className='date'>2024. 11</p>
+                <div className='imgdiv'>
+                  <img src={card} ></img>
+                </div>
+                <p className='detail'>기업형 페이지 디자인</p>
+                <ul className='list'>
+                  {/* <li>사이트 운영 경험을 목표로 개발</li> */}
+                  <li>react를 활용한 페이지 구현</li>
+                  {/* <li>AI를 활용한 이미지 생성 & 활용</li> */}
+                  
+                  {/* <li style={{color:'red', fontWeight:'700'}}>리액트 네이티브(어플)와 연동을 위해 현재 결제로직 수정중</li> */}
+                </ul>
+                <a className='link' href='https://gumi-gomi.github.io/cardfactory/build/' target='_blank'><p>https://cardfactory.co.kr</p></a>
+                <div className='usedskill'>
+                  <p>
+                    React
+                  </p>
+                  </div>
+                  <div className='popup' onClick={handleOpenModa20}>
+                    <i className="fa-solid fa-book"></i>
+                    <p>README</p>
+                  </div>
+              </div>
+
+
+
+              
+
+              
 
                      {/* ------------------------------------ 요식업사이트 시작*/}
               <div className='project'>
@@ -1316,6 +1375,43 @@ const handleDesignModalClose = () => {
 
 
       {/* ---------------------------- 랜딩페이지 끝 */}
+
+      
+ {/* -------------------------------------------- prompic 모달 */}
+      {isModalOpen21 && (
+        <ModalBackground onClick={handleCloseModa21}>
+          <ModalContent onClick={(e) => e.stopPropagation()}> {/* 모달 클릭 시 닫히지 않도록 */}
+            <CloseButton onClick={handleCloseModa21}>&times;</CloseButton>
+            <h3>PROMPIC(AI 이미지 생성 사이트)</h3>
+            <p className='date'>2024. 11</p>
+                <p className='url'>- Homepage URL -</p>
+                <a className='link' href='https://prompic.kr' target='_blank'><p>https://prompic.kr</p></a>
+                <p className='summary'>- Summary -</p>
+                <p className='detail'>Firebase / Dall-E 3를 연동한 AI 이미지 생성사이트트</p>
+                <ul className='list'>
+                  {/* <li>사이트 운영경험을 목표로 개발 </li> */}
+                  <li>Firebase Auth, Database, Functions, Hosting 활용</li>
+                  <li>Toss결제를 활용한 온라인 결제서비스 구축</li>
+                </ul>
+                <p className='background'>- Background -</p>
+                <p className='backgroundDetail'>Open api를 사용해서 사이트를 만들어보고 싶어서 진행하게 되었습니다.</p>
+                <p className='meaning'>- Detail - </p>
+                <p className='meaningDetail'>
+                  평소처럼 인스타그램을 보고있다가 gpt로 어플을 만들고, Open api를 사용해서 자동으로 수익을 얻고있다는 어그로성 영상을 보게되었습니다.<br/><br/>
+                  보통 그런 영상들은 그냥 넘기고 마는데 이번에는 그런 기능들은 내 사이트에 어떻게 적용하는지 궁금해졌고, 간단한 디자인으로 기능구현 해보았습니다. firebase의 auth, functions, storage, hosting을 이용해 회원가입 구현하고, dall-e 3모델 사용해 이미지 생성 스튜디오페이지 구성했습니다. 사이트의 구성, 코드는 모두 gpt를 사용해서 생성하였으며 총 4일정도에 걸쳐 사이트 완성하였습니다.<br/><br/> toss테스트 결제는 5, 12, 30 크레딧을 충전할 수 있는 단건결제는 테스트로 가능하고, 프리미엄 정기 결제는 toss심사후 이용가능해서 결제 불가능하게 되어있습니다. 회원가입을 하고 이메일 인증을 하면 로그인 후 사이트 이용 가능하며, 이미지 생성 1건당 1크레딧을 차감합니다.
+                   <br/><br/>
+                   실제 서비스를 하기엔 이미 너무 좋은 사이트들이 많기 때문에 궁금증 해소용으로 시작했는데 api의 연동과 효율적인 gpt의 활용을 위한 프롬프트작성 연습 등 도움이 되었습니다.
+                  {/* <span style={{color:'rgba(256,0,0,1)',fontWeight:"700"}}>(현재 카카오페이 가맹점 심사중이라서 실제 거래는 할 수 없고 회원가입 후 테스트결제로 확인할 수 있습니다.)</span> */}
+
+                </p>
+                <div className='usedskill'>
+                  <p>
+                    React, Firebase, PS
+                  </p>
+                  </div>
+          </ModalContent>
+        </ModalBackground>
+      )}
 
 
     </>
