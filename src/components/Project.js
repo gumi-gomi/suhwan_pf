@@ -689,7 +689,9 @@ const handleDesignModalClose = () => {
                 {/* <a href='https://drive.google.com/uc?export=download&id=1coFOwb4NtsLsKA4SP08AqeewrlWyFR1e' target='_blank'></a> */}
                 <p className='date'>2024. 11</p>
                 <div className='imgdiv'>
+                  <a href="https://gumi-gomi.github.io/h3lloworld/" target='_blank'>
                   <img src={h3llo} ></img>
+                  </a>
                 </div>
                 <p className='detail'>랜딩페이지 디자인</p>
                 <ul className='list'>
@@ -719,7 +721,10 @@ const handleDesignModalClose = () => {
               <div className='projectName'>기업형페이지디자인 샘플</div>
                 <p className='date'>2024. 12</p>
                 <div className='imgdiv'>
+                  <a href='https://gumi-gomi.github.io/pub_sample2/build/' target='_blank'>
+
                 <img src={sample1} ></img>
+                  </a>
                 </div>
                 <p className='detail'>기업형 페이지 디자인</p>
                 <ul className='list'>
@@ -755,7 +760,10 @@ const handleDesignModalClose = () => {
                 </a>
                 <p className='date'>2024. 11</p>
                 <div className='imgdiv'>
+                  <a href='https://gumigomi-illust.com' target='_blank'>
+
                   <img src={gumigomiimg} ></img>
+                  </a>
                 </div>
                 <p className='detail'>일러스트 판매 사이트 (GG-ILLUST)</p>
                 <ul className='list'>
@@ -788,7 +796,9 @@ const handleDesignModalClose = () => {
                 {/* <a href='https://drive.google.com/uc?export=download&id=1coFOwb4NtsLsKA4SP08AqeewrlWyFR1e' target='_blank'></a> */}
                 <p className='date'>2024. 11</p>
                 <div className='imgdiv'>
+                  <a href='https://prompic.kr' target='_blank'>
                   <img src={prompicimg} ></img>
+                  </a>
                 </div>
                 <p className='detail'>Dall-E-3 AI 이미지생성 사이트</p>
                 <ul className='list'>
@@ -817,7 +827,9 @@ const handleDesignModalClose = () => {
                 {/* <a href='https://drive.google.com/uc?export=download&id=1coFOwb4NtsLsKA4SP08AqeewrlWyFR1e' target='_blank'></a> */}
                 <p className='date'>2024. 11</p>
                 <div className='imgdiv'>
+                  <a href='https://gumi-gomi.github.io/cardfactory/build/' target='_blank'>
                   <img src={card} ></img>
+                  </a>
                 </div>
                 <p className='detail'>기업형 페이지 디자인</p>
                 <ul className='list'>
@@ -850,7 +862,9 @@ const handleDesignModalClose = () => {
               <div className='projectName'>요식업디자인 샘플</div>
                 <p className='date'>2025. 1</p>
                 <div className='imgdiv'>
+                  <a href='https://gumi-gomi.github.io/pub3/build' target='_blank'>
                 <img src={sample3} ></img>
+                  </a>
                 </div>
                 <p className='detail'>요식업기업 페이지 디자인</p>
                 <ul className='list'>
@@ -888,7 +902,9 @@ const handleDesignModalClose = () => {
               <div className='projectName'>기업형페이지디자인 샘플2</div>
                 <p className='date'>2024. 12</p>
                 <div className='imgdiv'>
+                  <a  href='https://gumi-gomi.github.io/pub4/build' target='_blank'>
                 <img src={sample5} ></img>
+                  </a>
                 </div>
                 <p className='detail'>기업형 페이지 디자인2</p>
                 <ul className='list'>
@@ -922,7 +938,10 @@ const handleDesignModalClose = () => {
               <div className='projectName'>랜딩페이지지 샘플</div>
                 <p className='date'>2024. 12</p>
                 <div className='imgdiv'>
+                  <a href='https://gumi-gomi.github.io/pub1/build/' target='_blank'>
+                    
                 <img src={sample7} ></img>
+                  </a>
                 </div>
                 <p className='detail'>랜딩페이지 디자인</p>
                 <ul className='list'>
@@ -957,7 +976,9 @@ const handleDesignModalClose = () => {
               <div className='projectName'>랜딩페이지 샘플 2</div>
                 <p className='date'>2024. 9</p>
                 <div className='imgdiv'>
+                  <a href='https://gumi-gomi.github.io/kmong_pj/build/' target='_blank'>
                 <img src={kmongimg} ></img>
+                  </a>
                 </div>
                 <p className='detail'>랜딩페이지 디자인2</p>
                 <ul className='list'>
@@ -983,7 +1004,9 @@ const handleDesignModalClose = () => {
               <div className='projectName'>REACT-THREE-FIBER</div>
                 <p className='date'>2024. 12</p>
                 <div className='imgdiv'>
+                  <a href=' https://gumi-gomi.github.io/r3f-notebook/build/' target='_blank'>
                 <img src={cardgameimg} ></img>
+                  </a>
                 </div>
                 <p className='detail'>R3F를 활용한 사이트 구현</p>
                 <ul className='list'>
